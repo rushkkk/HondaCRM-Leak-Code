@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_gravity="center"
+            android:layout_width="75dp"
+            android:layout_height="75dp">
+            <FrameLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgProduct"
+                android:background="@drawable/ic_mc_product_fake"
+                />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_new"/>
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        style="@style/MicroBlackText"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:text="CUB" />
+</LinearLayout>

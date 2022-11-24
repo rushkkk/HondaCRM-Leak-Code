@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_24">
+
+            <TextView
+                style="@style/Small3BlackBoldText"
+                android:text="@string/lb_provide_info" />
+
+            <TextView
+                style="@style/Small3BlackText"
+                android:layout_marginTop="@dimen/margin_6"
+                android:text="@string/lb_vehicle_picture" />
+
+            <ImageView
+                android:id="@+id/img_choose_picture"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/margin_15"
+                android:scaleType="center"
+                android:src="@drawable/ic_vehicle_fake" />
+
+            <TextView
+                style="@style/SmallBlackText"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:text="@string/vehicle_name" />
+
+            <EditText
+                android:id="@+id/edt_add_vehicle_honda_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:maxLength="30"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@drawable/border_edit_text"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/txtErrorVehicleName"
+                style="@style/MicroRedText"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/SmallBlackText"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="@string/vehicle_plate" />
+
+            <EditText
+                android:id="@+id/edt_add_vehicle_honda_number_plate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@drawable/border_edit_text"
+                android:inputType="text"
+                android:maxLength="30"/>
+
+            <TextView
+                android:id="@+id/txtErrorVehiclePlate"
+                style="@style/MicroRedText"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_15"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    style="@style/MediumWhileBoldText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_17"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_gray_background"
+                    android:gravity="center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/btn_cancel" />
+
+                <TextView
+                    android:id="@+id/btn_ok"
+                    style="@style/MediumWhileBoldText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/btn_ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C61E24</color>
+    <color name="colorPrimaryDark">#C61E24</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#D00014</color>
+    <color name="red30">#D11F26</color>
+
+    <color name="gray_background">#F1F1F1</color>
+    <color name="black_16">#DFE1E2</color>
+    <color name="black_38">#4D000000</color>
+    <color name="black_2">#B2B2B2</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite50">#80FFFFFF</color>
+    <color name="colorWhite60">#7EFFFFFF</color>
+    <color name="colorRed">#D81F26</color>
+    <color name="colorRed40">#D30000</color>
+    <color name="colorRedDark">#D21F26</color>
+
+    <color name="colorRedDarkPressed">#B8575D</color>
+    <color name="colorGray">#C5BFBF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack20">#33000000</color>
+
+    <color name="colorBlack26">#42000000</color>
+    <color name="colorBlack28">#47000000</color>
+    <color name="colorBlack36">#5C000000</color>
+    <color name="colorBlack50">#80000000</color>
+    <color name="colorBlack60">#99000000</color>
+    <color name="colorBlackGray">#606060</color>
+
+    <color name="colorGray60">#B3B3B3</color>
+    <color name="colorGray40">#66C5BFBF</color>
+    <color name="colorGray70">#ACABAC</color>
+    <color name="border">#252034</color>
+    <color name="text_edit">#1A1A1A</color>
+
+    <color name="colorTextFieldRegister">#EE6F6C6C</color>
+    <color name="colorCheckBox">#707070</color>
+
+    <color name="colorBlack30">#4D000000</color>
+    <color name="colorBlack43">#6E000000</color>
+    <color name="colorGrey">#ACABAC</color>
+    <color name="colorGreyDark">#606060</color>
+    <color name="colorGreyLabel">#909090</color>
+    <color name="colorGrey60">#99808080</color>
+    <color name="colorHighlight">#80ACABAC</color>
+    <!-- Profile -->
+    <color name="colorBrow">#646262</color>
+    <color name="colorBrow2">#A8A5A5</color>
+    <color name="colorBrow3">#B8B8B8</color>
+    <color name="colorBackgoundTab">#E6E6E6</color>
+    <color name="colorBackgoundOpacity">#DFFF0000</color>
+    <color name="colorBorderImageProfile">#BDBDBD</color>
+    <color name="colorBlack40">#66000000</color>
+    <color name="colorBlack08">#14000000</color>
+    <color name="colorBlack56">#8F000000</color>
+    <color name="colorRedHeader">#E6ED1B2F</color>
+    <color name="colorRedDay">#E91B2F</color>
+    <color name="colorRedGrayHeader">#9b0000</color>
+    <color name="colorRed85">#D9E10000</color>
+    <color name="colorRedBottom">#CF1F26</color>
+    <color name="colorRedItemSelected">#ED1B2F</color>
+    <color name="colorRed80HeaderMenu">#CCE91B2F</color>
+    <color name="colorGreyBlack">#8A7373</color>
+    <color name="colorGreyLight">#D4D4D4</color>
+    <color name="colorGrey80">#80808080</color>
+    <color name="colorYellowVh">#F1790F</color>
+
+    <!--connected-->
+    <color name="green">#39B14A</color>
+    <color name="gray_cnt_vin">#A5A5A5</color>
+
+    <color name="colorTransparent">@android:color/transparent</color>
+
+    <!-- VehicleInformation connected vpg top -->
+    <color name="colorRedDark2">#CF1F26</color>
+    <color name ="colorBlueBright">#337BF4</color>
+    <color name="color_progressbar">#707070</color>
+    <color name="color_black_gray">#A5A5A5</color>
+
+    <color name="colorGray30">#4DB3B3B3</color>
+    <color name="colorBlack96">#F5000000</color>
+
+    <color name="colorYellow">#FFEB3B</color>
+    <color name="colorStatusBar">#c7c7c7</color>
+    <color name="colorItemPIOnTime">#628B5C</color>
+    <color name="colorItemPIExpired">#545454</color>
+    <color name="colorItemPINextTime">#CA7327</color>
+    <color name="colorItemPIDefault">#4D939494</color>
+
+
+    <color name="colorHeaderTable">#1A000000</color>
+    <color name="colorLightTable">#05000000</color>
+    <color name="colorDarkTable">#0D000000</color>
+    <color name="colorCurrentStep">#F38F1E</color>
+    <color name="colorDoneStep">#39904A</color>
+
+    <!--notification-->
+    <color name="colorGrayNotifi">#3D3D3D</color>
+    <color name="colorGray80Notifi">#CC7D7D7C</color>
+    <color name="colorBlueNotifi">#009CDC</color>
+    <color name="colorBlueNotifiTitle">#00B0DE</color>
+    <color name="colorBlueSeenNotifi">#E6F6FF</color>
+    <color name="colorRedScrollNotifi">#DF0023</color>
+
+    <color name="colorGray2">#ABABAB</color>
+    <color name="grayHolder">#FBFBFB</color>
+    <color name="grayBorder">#99808080</color>
+
+
+</resources>

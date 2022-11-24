@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.connected.view.FuelStatusActivity">
+
+    <include layout="@layout/tool_bar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_vehicle"
+                style="@style/XXLargeRedText"
+                android:layout_marginLeft="18.5dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/tv_honda_sh_300cc" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19.5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_license_plates"
+                    style="@style/Micro2BlackText"
+                    android:text="80A-123.45" />
+
+                <TextView
+                    android:id="@+id/tv_vin"
+                    style="@style/Micro2BlackText"
+                    android:text="VIN: MAKDF2344647" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="18.5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="18.5dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.6dp"
+                android:layout_marginTop="27dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_fuel" />
+
+                <TextView
+                    style="@style/Medium3BlackText"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16.5dp"
+                    android:text="@string/lb_fuel_status" />
+            </LinearLayout>
+
+            <com.warkiz.widget.IndicatorStayLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16.5dp">
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/idc_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    app:isb_max="2000"
+                    app:isb_min="0"
+                    app:isb_show_indicator="rectangle"
+                    app:isb_thumb_color="@color/green"
+                    app:isb_thumb_drawable="@drawable/ic_thumb_fuel"
+                    app:isb_track_progress_color="@color/green"
+                    app:isb_track_progress_size="7dp" />
+            </com.warkiz.widget.IndicatorStayLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fuel_start"
+                    style="@style/MicroBlackText"
+                    android:layout_marginLeft="18.2dp"
+                    android:text="0km" />
+
+                <TextView
+                    android:id="@+id/tv_fuel_end"
+                    style="@style/MicroBlackText"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="17dp"
+                    android:text="2000km" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/NanoBlack30Text"
+                    android:layout_marginLeft="17.2dp"
+                    android:text="(Số km đã đi từ lần thay dầu trước)" />
+
+                <TextView
+                    style="@style/NanoBlack30Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="17dp"
+                    android:text="(Số km ở lần thay dầu tiếp theo)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="21.5dp"
+                android:layout_marginRight="19dp">
+
+                <TextView
+                    style="@style/MediumBlackText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_setting_fuel" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18.7dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="18.5dp"
+                        android:layout_marginRight="18.5dp"
+                        android:background="#80808D" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17.8dp"
+                        android:layout_marginTop="17.5dp"
+                        android:layout_marginBottom="15.5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_ic_oil"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_change_oil" />
+
+                        <TextView
+                            style="@style/MicroBlack30Text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8.7dp"
+                            android:layout_toRightOf="@+id/iv_ic_oil"
+                            android:text="Thay dầu lần sau" />
+
+                        <TextView
+                            android:id="@+id/tv_change_oil"
+                            style="@style/MicroBlackText"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8.7dp"
+                            android:layout_marginRight="21.6dp"
+                            android:text="2000km" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="18.5dp"
+                        android:layout_marginRight="18.5dp"
+                        android:background="#80808D" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17.8dp"
+                        android:layout_marginTop="17.5dp"
+                        android:layout_marginBottom="15.5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_ic_num_day"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_num_day" />
+
+                        <TextView
+                            style="@style/MicroBlack30Text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8.7dp"
+                            android:layout_toRightOf="@+id/iv_ic_num_day"
+                            android:text="Số ngày gửi cảnh báo thay dầu" />
+
+                        <TextView
+                            android:id="@+id/tv_num_day"
+                            style="@style/MicroBlackText"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8.7dp"
+                            android:layout_marginRight="21.6dp"
+                            android:text="3 ngày" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="18.5dp"
+                        android:layout_marginRight="18.5dp"
+                        android:background="#80808D" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17.8dp"
+                        android:layout_marginTop="17.5dp"
+                        android:layout_marginBottom="15.5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_ic_num_in_day"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_num_in_day" />
+
+                        <TextView
+                            style="@style/MicroBlack30Text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8.7dp"
+                            android:layout_toRightOf="@+id/iv_ic_num_in_day"
+                            android:text="Số lượng cảnh báo sẽ nhận trong 1 ngày" />
+
+                        <TextView
+                            android:id="@+id/tv_num_in_day"
+                            style="@style/MicroBlackText"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8.7dp"
+                            android:layout_marginRight="21.6dp"
+                            android:text="2 lần" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="18.5dp"
+                    android:layout_marginRight="18.5dp"
+                    android:background="#80808D" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_recount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_40"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/selector_red_button"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/re_count"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_size_small_4"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

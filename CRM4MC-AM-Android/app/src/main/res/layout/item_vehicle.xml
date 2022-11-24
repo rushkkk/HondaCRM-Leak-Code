@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_15">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_item_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_17"
+        android:layout_marginTop="@dimen/margin_6"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="@dimen/margin_6"
+        android:layout_toStartOf="@+id/img_vehicle_move"
+
+        app:cardCornerRadius="@dimen/item_vehicle_radius"
+     >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/frContainerHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleVehicleTemp"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="@drawable/circle_holder" />
+
+                    <ImageView
+                        android:id="@+id/imgVehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/description_image"
+                     />
+
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleVehicle"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end">
+
+                    <ImageView
+                        android:id="@+id/imgConnect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_5"
+                        android:src="@drawable/ic_connect"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/imgEditVehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/common_highlight_background"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/padding_5"
+                        android:src="@drawable/ic_edit_vehicle"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/imgDeleteVehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/common_highlight_background"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/padding_5"
+                        android:src="@drawable/ic_delete_vehicle"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtVehicleName"
+                    style="@style/MediumBlackBoldText"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Chiến ma" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txtLicensePlate"
+                        style="@style/SmallBlackText"
+                        android:layout_width="match_parent"
+                        android:layout_toStartOf="@+id/layout_vin"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        tools:text="29B1 - 123.45" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_vin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="VIN: "
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/txtVINCode"
+                            style="@style/SmallBlackText"
+                            android:ellipsize="start"
+                            android:singleLine="true"
+                            tools:text="***ABCDEFG" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:id="@+id/txtVehicleModel"
+                        style="@style/SmallBlackText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/layout_next_pm_date"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        tools:text="SH 150i" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_next_pm_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="start">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/next_pm"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtNextPMDate"
+                            style="@style/SmallBlackText"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            tools:text="08/2019    " />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_vehicle_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_30"
+        android:paddingBottom="@dimen/padding_30"
+        android:src="@drawable/ic_menu_black_24dp"
+        android:visibility="gone" />
+</RelativeLayout>

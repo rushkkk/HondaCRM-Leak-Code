@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".view.VerifyOTP">
+
+    <include layout="@layout/tool_bar_back" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/instruction_text_otp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtTimeOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="11dp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/edtInputOtp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="@string/hint_otp_enter"
+                android:background="@drawable/shape_text_input"
+                android:gravity="center"
+                android:hint="@string/hint_otp_enter"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="14sp"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/btnVerifys"
+                android:layout_width="170dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/selector_red_button"
+                android:text="@string/button_verify"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="@string/resend_text"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/txtResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/resend_text_2"
+            android:textColor="@color/colorBlack"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

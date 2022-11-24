@@ -1,0 +1,223 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="@dimen/margin_1"
+    android:layout_marginTop="@dimen/margin_30"
+    android:layout_marginEnd="@dimen/margin_1"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_20"
+        android:paddingEnd="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_20">
+
+        <TextView
+            style="@style/Small2BlackBoldText"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="@string/PI_tittle" />
+
+        <TextView
+            android:id="@+id/txtCanGetDataPI"
+            style="@style/SmallBlackText"
+            android:drawableStart="@drawable/ic_cannot_get_data"
+            android:drawablePadding="@dimen/padding_5"
+            android:maxLines="1"
+            android:text="@string/can_not_get_data"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_pi_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6">
+
+                <TextView
+                    android:id="@+id/txtPI1"
+                    style="@style/Micro2WhiteBoldText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_pi_1st_default"
+                    android:paddingTop="@dimen/padding_5"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:text="@string/pi_1st"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtPI2"
+                    style="@style/Micro2WhiteBoldText"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/margin_1"
+                    android:layout_weight="1"
+                    android:background="@color/colorItemPIDefault"
+                    android:paddingTop="@dimen/padding_5"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:text="@string/pi_2nd"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtPI3"
+                    style="@style/Micro2WhiteBoldText"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/margin_1"
+                    android:layout_weight="1"
+                    android:background="@color/colorItemPIDefault"
+                    android:paddingTop="@dimen/padding_5"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:text="@string/pi_3rd"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtPI4"
+                    style="@style/Micro2WhiteBoldText"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/margin_1"
+                    android:layout_weight="1"
+                    android:background="@color/colorItemPIDefault"
+                    android:paddingTop="@dimen/padding_5"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:text="@string/pi_4th"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtPI5"
+                    style="@style/Micro2WhiteBoldText"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/margin_1"
+                    android:layout_weight="1"
+                    android:background="@color/colorItemPIDefault"
+                    android:paddingTop="@dimen/padding_5"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:text="@string/pi_5th"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtPI6"
+                    style="@style/Micro2WhiteBoldText"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/margin_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_pi_last_default"
+                    android:paddingTop="@dimen/padding_5"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:text="@string/pi_6th"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6"
+                android:paddingStart="@dimen/padding_20"
+                android:paddingEnd="@dimen/padding_20">
+
+                <TextView
+                    style="@style/MicroBlackText"
+                    android:layout_alignParentStart="true"
+                    android:drawableStart="@drawable/ic_ontime"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:gravity="center"
+                    android:text="@string/on_time"
+                    android:textAlignment="center" />
+
+                <TextView
+                    style="@style/MicroBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableStart="@drawable/ic_expired"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:text="@string/expired" />
+
+                <TextView
+                    style="@style/MicroBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableStart="@drawable/ic_nextime"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:text="@string/next_time" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_14"
+                android:background="@color/colorGray30" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10">
+
+                <TextView
+                    android:id="@+id/txtTheLastPI"
+                    style="@style/SmallBlackText"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/margin_40"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_toStartOf="@+id/tvTimingPI"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:text="@string/nearPIcheck" />
+
+                <TextView
+                    android:id="@+id/tvTimingPI"
+                    style="@style/SmallBlackText"
+                    android:layout_alignParentEnd="true"
+                    tools:text="2019/01/01" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGray30" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/description_image"
+                    android:src="@drawable/ic_warning_vehicle_infor" />
+
+                <TextView
+                    android:id="@+id/txtTheNextPI"
+                    style="@style/SmallBlackText"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/margin_40"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_toStartOf="@+id/tvTimingExpired"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:text="@string/date_expired_pi_check" />
+
+                <TextView
+                    android:id="@+id/tvTimingExpired"
+                    style="@style/SmallBlackText"
+                    android:layout_alignParentEnd="true"
+                    tools:text="2019/01/01" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

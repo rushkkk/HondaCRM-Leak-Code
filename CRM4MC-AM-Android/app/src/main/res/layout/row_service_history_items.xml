@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_12"
+    android:paddingTop="@dimen/padding_12"
+    android:paddingRight="@dimen/padding_12"
+    android:background="?selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/img_fix"
+        android:layout_width="@dimen/margin_30"
+        android:layout_height="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_5"
+        android:contentDescription="@string/description_image"
+        android:src="@mipmap/ic_fix" />
+
+    <TextView
+        android:id="@+id/tv_maintain"
+        style="@style/Small2BlackBoldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_toEndOf="@+id/img_fix"
+        android:ellipsize="end"
+        android:text="@string/tv_maintain" />
+
+    <TextView
+        android:id="@+id/tv_agency"
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_maintain"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_toEndOf="@+id/img_fix"
+        android:ellipsize="end"
+        android:text="@string/HVN_head" />
+
+    <TextView
+        android:id="@+id/tv_numAgency"
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_maintain"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/tv_agency"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="123 Ba Dinh"
+        android:layout_toStartOf="@+id/tv_date"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_agency"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_toEndOf="@+id/img_fix"
+        android:ellipsize="end"
+        android:text="@string/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_numPrice"
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_agency"
+        android:layout_marginStart="@dimen/margin_5"
+        android:layout_toEndOf="@+id/tv_price"
+        android:layout_toStartOf="@+id/ratingBarService"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="2.150.000 vnd" />
+
+    <TextView
+        android:id="@+id/tv_km"
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_date"
+        android:layout_marginBottom="19dp"
+        android:layout_toLeftOf="@+id/tv_numKm"
+        android:visibility="visible"
+        android:text="@string/tv_km" />
+
+    <TextView
+        android:id="@+id/tv_numKm"
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_5"
+        android:visibility="visible"
+        tools:text="96.969 km" />
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_numKm"
+        android:layout_toStartOf="@+id/tv_numDate"
+        android:text="@string/tv_date" />
+
+    <TextView
+        android:id="@+id/tv_numDate"
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_numKm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_5"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="30-Apr-2019" />
+
+    <RatingBar
+        android:id="@+id/ratingBarService"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_numDate"
+        android:layout_alignParentEnd="true"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:visibility="visible"
+        android:progressTint="@color/colorRed"
+        tools:rating="5.0"
+        android:stepSize="0.1" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_price"
+        android:layout_marginTop="@dimen/margin_12"
+        android:background="@color/colorGray30" />
+
+</RelativeLayout>

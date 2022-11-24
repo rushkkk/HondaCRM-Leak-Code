@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_10"
+    android:paddingBottom="@dimen/padding_10"
+    android:background="@drawable/border_dialog">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dialog_cancel"
+        style="@style/SmallBlackBoldText"
+        android:layout_gravity="center"
+        android:text="@string/dialog_cancel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dialog_question"
+        style="@style/SmallBlackText"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_15"
+        android:text="@string/dialog_cancel_question"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/margin_15"
+
+        android:id="@+id/radioGroup_character">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_revise_radio_1"
+            android:id="@+id/radio1"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/margin_40"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_revise_radio_2"
+            android:id="@+id/radio2"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/margin_40"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_revise_radio_3"
+            android:id="@+id/radio3"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/margin_40"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_cancel_radio_4"
+            android:id="@+id/radio4"
+            android:checked="true"
+            android:layout_marginLeft="@dimen/margin_40"
+            android:buttonTint="@color/gray"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="@dimen/margin_60"
+        android:layout_marginTop="@dimen/margin_25"
+        android:background="@drawable/border_edit_text"
+        android:layout_marginLeft="@dimen/margin_40"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_30"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingEnd="@dimen/padding_10"
+        >
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            style="@style/MediumWhileBoldText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gray_background"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:textSize="13dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_no" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            style="@style/MediumWhileBoldText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_yes"
+            android:textSize="13dp"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+
+</LinearLayout>

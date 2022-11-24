@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Micro2BlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginEnd="@dimen/margin_27"
+            android:text="@string/followuson_name" />
+
+        <ImageButton
+            android:id="@+id/btnSocialFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_27"
+            android:background="@null"
+            android:contentDescription="@string/description_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_menu_facebook" />
+
+        <ImageButton
+            android:id="@+id/btnSocialInstagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:background="@null"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_instagram"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnSocialTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:background="@null"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_twitter"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnSocialYoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_youtube" />
+    </LinearLayout>
+</HorizontalScrollView>

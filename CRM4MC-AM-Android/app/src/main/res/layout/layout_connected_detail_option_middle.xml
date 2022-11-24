@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_connected_vehicle_middle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_5">
+
+    <TextView
+        android:id="@+id/tv_1"
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_update"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ly_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_8"
+        android:background="@drawable/border_spinner_connected_vehicle"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_2"
+
+        android:paddingBottom="@dimen/padding_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_item_sn_connected_vehicle_content"-->
+        <!--style="@style/Small3BlackText"-->
+        <!--android:text="5"-->
+        <!--android:paddingLeft="@dimen/padding_10"-->
+        <!--/>-->
+
+        <Spinner
+            android:id="@+id/sn_item_sn_connected_vehicle_time_to_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/padding_8" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/SmallBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_8"
+        android:layout_marginRight="@dimen/padding_8"
+
+        android:text="@string/minutes"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ly_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_list_view_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_list_view_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_list_view_tab"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/layout_list_view_tab"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+        <ImageView
+            android:id="@+id/iv_grid_view_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_grid_view_tab"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

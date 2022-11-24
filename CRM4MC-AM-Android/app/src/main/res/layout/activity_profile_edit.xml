@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/image_user_profile_default"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@color/colorRedHeader"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/tool_bar_back_tranfer" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/honda"
+                    app:civ_border_color="@color/colorBorderImageProfile"
+                    app:civ_border_width="5dp" />
+
+
+                <TextView
+                    style="@style/MediumWhiteBoldText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/nameUser" />
+
+                <TextView
+                    style="@style/MediumWhiteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/phone" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:paddingBottom="@dimen/padding_15"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/colorBlack"
+                            app:tabTextAppearance="@style/TabLayoutTextStyle"
+                            app:tabTextColor="@color/colorBrow2" />
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

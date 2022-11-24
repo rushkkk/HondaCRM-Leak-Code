@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar_connected" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lyNobluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/ic_no_bluetooth" />
+
+                <TextView
+                    style="@style/SmallBlackTextBold"
+                    android:text="@string/no_bluetooth_device_found" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SmallBlackText"
+                android:layout_marginTop="24dp"
+                android:text="Make sure the device you want to\nconnect is visible to other devices" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                app:indicatorColor="@color/red"
+                app:indicatorName="BallSpinFadeLoaderIndicator" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_not_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:src="@drawable/select" />
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/please_selecte_the_vehicle_to_connect" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray_cnt_vin" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

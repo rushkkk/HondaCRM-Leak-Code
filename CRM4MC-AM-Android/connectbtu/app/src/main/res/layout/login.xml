@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/screenBg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09975669" />
+
+    <LinearLayout
+        android:layout_width="326dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left">
+
+        <ImageView
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:contentDescription="@string/login"
+            android:src="?attr/logoLogin" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.65">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/bgLoginEditText"
+                    android:drawablePadding="@dimen/padding_icon_input_login"
+                    android:drawableStart="@drawable/ic_account"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/userNameHint"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_icon_input_login"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_button_dialog"
+                    android:layout_marginTop="@dimen/margin_button_dialog"
+                    android:background="?attr/bgLoginEditText"
+                    android:drawablePadding="@dimen/padding_icon_input_login"
+                    android:drawableStart="@drawable/ic_password"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/passwordHint"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/padding_icon_input_login"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:enabled="false"
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/loginBtnBg"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_scan_button" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:textSize="@dimen/select_theme_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/select_theme"
+            android:textColor="@color/lightGray" />
+
+        <RadioGroup
+            android:layout_margin="@dimen/select_theme_margin"
+            android:id="@+id/rgSelectTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbThemeBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="?attr/theme1Selector"
+                android:gravity="center"
+                android:text="@string/theme_1"
+                android:textColor="?attr/themeTitleSelector"
+                android:textSize="@dimen/theme_item_text_size" />
+
+            <RadioButton
+                android:id="@+id/rbThemeRed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="?attr/theme2Selector"
+                android:gravity="center"
+                android:text="@string/theme_2"
+                android:textColor="?attr/themeTitleSelector"
+                android:textSize="@dimen/theme_item_text_size" />
+
+            <RadioButton
+                android:id="@+id/rbThemeBlackTexture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="?attr/theme3Selector"
+                android:gravity="center"
+                android:text="@string/theme_3"
+                android:textColor="?attr/themeTitleSelector"
+                android:textSize="@dimen/theme_item_text_size" />
+
+            <RadioButton
+                android:id="@+id/rbThemeRedTexture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="?attr/theme4Selector"
+                android:gravity="center"
+                android:text="@string/theme_4"
+                android:textColor="?attr/themeTitleSelector"
+                android:textSize="@dimen/theme_item_text_size" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9026764" />
+</android.support.constraint.ConstraintLayout>

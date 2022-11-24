@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="?attr/screenBg"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+    <TextView
+        android:id="@+id/txtMessageDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/margin_top_button_dialog"
+        android:text="@string/msg_deleted_user"
+        android:textColor="?attr/dialogTitleTextColor"
+        android:textSize="@dimen/text_size_message_dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_top_button_dialog"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLeftDialog"
+            android:layout_width="match_parent"
+            android:background="@drawable/dialog_btn_selector"
+            android:text="@string/text_button_dialog_quit"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_message_dialog"
+            android:layout_height="@dimen/button_height_size_dialog" />
+
+        <Button
+            android:id="@+id/btnRightDialog"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin_button_dialog"
+            android:text="@string/text_button_dialog_register_again"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:padding="@dimen/padding_button_unregister"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_message_dialog"
+            android:background="@drawable/dialog_btn_selector"
+            android:layout_height="@dimen/button_height_size_dialog" />
+    </LinearLayout>
+</RelativeLayout>

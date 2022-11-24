@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_24"
+            android:paddingEnd="@dimen/padding_24">
+
+            <TextView
+                style="@style/Small3BlackBoldText"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:text="@string/dialog_edit_vehicle_tittle" />
+
+            <TextView
+                style="@style/SmallBlackText"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_13"
+                android:text="@string/tap_to_edit_image_vehicle" />
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_9"
+                android:scaleType="center"
+                android:id="@+id/layout_imgVehicle"
+                tools:ignore="ContentDescription">
+
+                <FrameLayout
+                    android:id="@+id/frContainerHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleVehicleTemp"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:background="@drawable/circle_holder" />
+
+                    <ImageView
+                        android:id="@+id/imgVehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/description_image"
+                       />
+
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleVehicle"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    tools:src="@drawable/honda"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txt_restore_vehicle_picture"
+                style="@style/SmallRedText"
+                android:layout_gravity="center"
+                android:text="@string/restore_image_vehicle"
+                android:textColor="@drawable/highlight" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20">
+
+                    <TextView
+                        android:id="@+id/tvCurrentName"
+                        style="@style/SmallBlackText"
+                        android:text="@string/current_name_vehicle" />
+
+                    <TextView
+                        android:id="@+id/txt_current_vehicle_name"
+                        style="@style/SmallBlackBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_toEndOf="@id/tvCurrentName"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:lines="1"
+                        tools:text="My Honda" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/new_name_vehicle" />
+
+                <EditText
+                    android:id="@+id/edit_new_vehicle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:background="@drawable/border_edit_text"
+                    android:inputType="text"
+                    android:maxLength="30" />
+
+                <TextView
+                    android:id="@+id/txtErrorVehicleName"
+                    style="@style/MicroRedText"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:visibility="invisible" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvCurrentPlate"
+                        style="@style/SmallBlackText"
+                        android:text="@string/current_plate_number" />
+
+                    <TextView
+                        android:id="@+id/txt_current_vehicle_plate"
+                        style="@style/SmallBlackBoldText"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_toEndOf="@id/tvCurrentPlate"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:lines="1" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/new_plate_number" />
+
+                <EditText
+                    android:id="@+id/edit_new_vehicle_plate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:background="@drawable/border_edit_text"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="30" />
+
+                <TextView
+                    android:id="@+id/txtErrorVehiclePlate"
+                    style="@style/MicroRedText"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_24"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/padding_20"
+                android:paddingEnd="@dimen/padding_20"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    style="@style/MediumWhileBoldText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_17"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_gray_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/btn_cancel" />
+
+                <TextView
+                    android:id="@+id/btn_ok"
+                    style="@style/MediumWhileBoldText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/btn_ok"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

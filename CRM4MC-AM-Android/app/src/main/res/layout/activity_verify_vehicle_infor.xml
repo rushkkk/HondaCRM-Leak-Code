@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar_back" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_20"
+            android:paddingTop="@dimen/padding_20"
+            android:paddingEnd="@dimen/padding_20"
+            android:paddingBottom="@dimen/padding_20">
+
+            <TextView
+                style="@style/MediumBlackText"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="@string/fragment_verify_vehicle_title" />
+
+            <TextView
+                style="@style/Small3BlackText"
+                android:text="@string/vehicle_registration_certifcate" />
+
+            <TextView
+                style="@style/Small3BlackText"
+                android:text="@string/vehicle_personal_identity_card" />
+
+            <TextView
+                style="@style/Small3BlackText"
+                android:text="@string/vehicle_invoice" />
+
+            <TextView
+                style="@style/SmallBlackText"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/field_required" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvImageVerifyVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:background="@drawable/border_area_text">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/btnCaptureImage"
+                    style="@style/MediumWhiteBoldText"
+                    android:background="@drawable/selector_enable_button"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_45"
+                    android:paddingRight="@dimen/padding_45"
+                    android:text="@string/capture" />
+
+                <ImageView
+                    android:id="@+id/btnGuildCaptureImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:background="@drawable/common_highlight_background"
+                    android:src="@drawable/ic_question" />
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/MediumBlackText"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="@string/note" />
+
+            <EditText
+                android:id="@+id/editVerifyNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:background="@drawable/border_area_text"
+                android:gravity="top"
+                android:lines="5" />
+
+            <TextView
+                android:id="@+id/btnSendRequestVerify"
+                style="@style/MediumWhiteBoldText"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_30"
+                android:background="@drawable/selector_enable_button"
+                android:enabled="false"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_30"
+                android:paddingRight="@dimen/padding_30"
+                android:text="@string/send_request" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

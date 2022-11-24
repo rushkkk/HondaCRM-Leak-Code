@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/tv_job"
+        style="@style/SmallBlackText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_6"
+        android:paddingBottom="@dimen/margin_6"
+        android:text="Job" />
+
+    <View
+        android:id="@+id/viewHeader"
+        android:layout_width="1dp"
+        android:layout_height="33dp"
+        android:background="@color/colorGray"/>
+
+    <TextView
+        android:id="@+id/tv_jobPrice"
+        style="@style/SmallBlackText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="end"
+        android:paddingTop="@dimen/margin_6"
+        android:paddingRight="@dimen/margin_20"
+        android:paddingBottom="@dimen/margin_6"
+        android:layout_toEndOf="@+id/tv_job"
+        android:text="Giá tiền" />
+
+</LinearLayout>

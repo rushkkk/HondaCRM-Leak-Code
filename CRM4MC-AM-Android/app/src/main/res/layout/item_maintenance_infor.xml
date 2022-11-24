@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_1"
+    android:layout_marginTop="@dimen/margin_30"
+    android:layout_marginEnd="@dimen/margin_1"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lb_maintain_information"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small_2"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtCanGetDataPI"
+            style="@style/SmallBlackText"
+            android:drawableStart="@drawable/ic_cannot_get_data"
+            android:drawablePadding="@dimen/padding_5"
+            android:maxLines="1"
+            android:text="@string/can_not_get_data"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/view_infor_maintenance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/bg_item_in_recall"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_10"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:text="@string/lb_last_maintenance" />
+
+                <TextView
+                    android:id="@+id/txtTimeMaintain"
+                    style="@style/SmallBlackBoldText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="02/02/2019" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_next_maintenance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/bg_item_in_recall"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_10"
+                android:visibility="gone"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:text="@string/lb_next_maintenance" />
+
+                <TextView
+                    android:id="@+id/txt_next_maintenance"
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    tools:text="02/02/2019" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray30" />
+
+        <TextView
+            android:id="@+id/btn_Benefits_of_maintenance"
+            style="@style/SmallRedText"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:paddingStart="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_5"
+            android:paddingEnd="@dimen/padding_15"
+            android:paddingBottom="@dimen/padding_5"
+            android:text="@string/lb_benefits_maintenance" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

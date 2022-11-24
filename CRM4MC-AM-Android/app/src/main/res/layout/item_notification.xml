@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_notification"
+    android:paddingStart="@dimen/padding_16"
+    android:paddingEnd="@dimen/margin_10"
+    android:orientation="vertical"
+    android:background="@drawable/bg_list_notification_not_seen">
+    <TextView
+        android:layout_marginTop="@dimen/margin_8"
+        android:id="@+id/txt_title_item_notification"
+        android:layout_width="wrap_content"
+
+        android:textColor="@color/colorBlueNotifiTitle"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_small_3"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txt_content_item_notifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_small"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:layout_marginTop="@dimen/margin_10"
+       />
+
+    <TextView
+        android:id="@+id/txt_time_ago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:textSize="@dimen/font_size_small_3" />
+</LinearLayout>

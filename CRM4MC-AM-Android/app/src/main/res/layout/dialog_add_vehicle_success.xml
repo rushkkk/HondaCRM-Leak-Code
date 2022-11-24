@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_20">
+
+    <TextView
+        android:id="@+id/txt_title_confirm"
+        style="@style/MediumBlackText"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:text="@string/add_vehicle_success" />
+
+    <TextView
+        android:id="@+id/btn_ok"
+        style="@style/MediumWhileBoldText"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="@string/btn_ok"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

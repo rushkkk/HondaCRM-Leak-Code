@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomFontTextView">
+        <attr name="customFont" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="radiusCorner" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+        <attr name="dateFormat" format="string" />
+    </declare-styleable>
+
+    <attr name="mainTextColor" format="reference" />
+
+</resources>

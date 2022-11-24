@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/line9"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_11"
+    android:layout_marginTop="@dimen/margin_11"
+    android:layout_marginRight="@dimen/margin_11"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_2">
+
+        <ImageView
+            android:id="@+id/image_profile_tabevent"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/honda"
+            tools:ignore="ContentDescription,MissingPrefix,ObsoleteLayoutParam" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/image_profile_tabevent"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/label_profile_title"
+                style="@style/SmallBlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/titleEvent" />
+
+
+            <TextView
+                android:id="@+id/label_profile_content"
+                style="@style/SmallBlackText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/label_profile_title"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="@string/contentEvent" />
+
+            <LinearLayout
+                android:id="@+id/item_clock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_profile_content"
+                android:layout_marginTop="9dp"
+                android:layout_weight="14"
+                android:orientation="horizontal"
+                tools:ignore="ObsoleteLayoutParam">
+
+                <ImageView
+                    android:id="@+id/icon_profile_clock"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_alam_profile"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/label_profile_datestart"
+                    style="@style/NanoBlack50Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:maxLines="1"
+                    android:layout_weight="5"
+                    android:text="@string/birthdate" />
+
+                <TextView
+                    android:id="@+id/label_profile_space"
+                    style="@style/NanoBlack50Text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:text="-"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/label_profile_dateEnd"
+                    style="@style/NanoBlack50Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:layout_weight="8"
+                    android:text="@string/birthdate" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_clock"
+                android:layout_gravity="left"
+                android:layout_weight="14"
+                android:orientation="horizontal"
+                tools:ignore="ObsoleteLayoutParam">
+
+                <ImageView
+                    android:id="@+id/icon_profile_maker"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingTop="@dimen/margin_3"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_location_profile"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/label_profile_address"
+                    style="@style/NanoBlack50Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="13"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="@string/addressVent" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorBlack50" />
+</LinearLayout>

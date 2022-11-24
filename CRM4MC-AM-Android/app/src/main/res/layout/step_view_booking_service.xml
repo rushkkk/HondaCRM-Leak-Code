@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/step_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="7">
+
+    <LinearLayout
+        android:id="@+id/layout1st"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_step_select_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/selector_image_indicator" />
+
+        <TextView
+            android:id="@+id/tv_select_vehicle"
+            style="@style/MicroBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/lb_select_vehicle"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_text_indicator" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_weight="0.5"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/layout2st"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_step_select_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/selector_image_indicator" />
+
+        <TextView
+            android:id="@+id/tv_select_dealer"
+            style="@style/MicroBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/lb_select_dealer"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_text_indicator" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_weight="0.5"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/layout3st"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_step_time_slot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/selector_image_indicator" />
+
+        <TextView
+            android:id="@+id/tv_select_time_slot"
+            style="@style/MicroBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/lb_time_slot"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_text_indicator" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_weight="0.5"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/layout4st"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_step_select_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/selector_image_indicator" />
+
+        <TextView
+            android:id="@+id/tv_select_service"
+            style="@style/MicroBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/lb_select_service"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_text_indicator" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_weight="0.5"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/layout5st"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_step_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/selector_image_indicator" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            style="@style/MicroBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/lb_submit_booking"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_text_indicator" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <CheckBox
+            android:id="@+id/elect_dealer_oto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_39"
+            android:layout_below="@+id/textRight"
+            android:button="@drawable/checkbox_register"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/margin_7"
+            android:layout_width="wrap_content"
+            style="@style/MicroBlackText"
+            android:layout_height="wrap_content"
+            android:text="@string/lb_checkbox_oto"/>
+        <CheckBox
+            android:layout_marginLeft="@dimen/margin_63"
+            android:id="@+id/select_dealer_moto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textRight"
+            android:button="@drawable/checkbox_register"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/margin_7"
+            android:layout_width="wrap_content"
+            style="@style/MicroBlackText"
+            android:layout_height="wrap_content"
+            android:text="@string/lb_checkbox_moto"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|top"
+        >
+        <FrameLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/border_edit_text">
+            <Spinner
+                android:id="@+id/sp_brand_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="170dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/border_edit_text">
+
+            <Spinner
+                android:id="@+id/sp_District"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown" />
+        </FrameLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:text="@string/tf_count_dealer"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <FrameLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></FrameLayout>
+
+        <FrameLayout
+            android:visibility="visible"
+            android:layout_width="360dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_height="342dp"
+            ></FrameLayout>
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>

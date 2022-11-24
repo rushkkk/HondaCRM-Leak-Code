@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.register.ui.InputOTPActivity">
+
+    <include layout="@layout/tool_bar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/SmallBlackBoldText"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:text="@string/lb_sending_otp" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp">
+
+
+            <TextView
+                android:id="@+id/tvMessageWrong"
+                style="@style/SmallRedDarkText"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="38dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/SmallBlackText"
+                    android:text="@string/lb_time_remaining"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtCount"
+                    style="@style/SmallBlackText"
+                    android:layout_marginStart="3dp"
+                    android:text="2:23"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/editOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/shape_text_input"
+            android:focusable="true"
+            android:gravity="center"
+            android:hint="@string/hint_otp_enter"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtErrorVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_small"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnVerify"
+            style="@style/Small3RedButtonRound"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/button_otp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/questionOTP"
+            style="@style/MediumBlack36Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lb_not_receive_otp"
+            android:textSize="@dimen/font_size_medium" />
+
+        <TextView
+            android:id="@+id/btnResent"
+            android:layout_marginStart="@dimen/margin_5"
+            style="@style/MediumBlackText"
+            android:text="@string/lb_resend_otp" />
+
+    </LinearLayout>
+</FrameLayout>

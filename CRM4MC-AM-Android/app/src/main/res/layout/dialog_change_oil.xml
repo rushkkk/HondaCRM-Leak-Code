@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_dialog"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="22dp">
+
+    <TextView
+        style="@style/Small3BlackText"
+        android:text="@string/change_oil" />
+
+    <TextView
+        style="@style/SmallBlackText"
+        android:layout_marginTop="16dp"
+        android:text="Change oil next time" />
+
+    <EditText
+        android:id="@+id/edt_km_change"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin_6"
+        android:background="@drawable/border_edit_text"
+        android:hint="1.500"
+        android:inputType="number"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        style="@style/SmallBlackText"
+        android:layout_marginTop="16dp"
+        android:text="Number of days receiving oil change" />
+
+    <EditText
+        android:id="@+id/edt_num_day"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin_6"
+        android:background="@drawable/border_edit_text"
+        android:hint="3"
+        android:inputType="number"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        style="@style/SmallBlackText"
+        android:layout_marginTop="16dp"
+        android:text="Number of wanrnings will be  received in 1" />
+
+    <EditText
+        android:id="@+id/edt_num_in_day"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin_6"
+        android:background="@drawable/border_edit_text"
+        android:hint="2"
+        android:inputType="number"
+        android:paddingLeft="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_20"
+        android:paddingEnd="@dimen/padding_20"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            style="@style/MediumWhileBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_17"
+            android:layout_weight="1"
+            android:background="@drawable/button_gray_background"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_cancel" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            style="@style/MediumWhileBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_ok"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>

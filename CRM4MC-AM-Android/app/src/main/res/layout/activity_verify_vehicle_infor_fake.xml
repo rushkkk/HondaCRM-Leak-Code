@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/tool_bar_back"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_10"
+            android:paddingBottom="@dimen/padding_30"
+            android:paddingHorizontal="@dimen/padding_20">
+
+            <TextView
+                style="@style/MediumBlackBoldText"
+                android:layout_marginBottom="@dimen/margin_13"
+                android:text="@string/fragment_verify_vehicle_title" />
+
+            <TextView
+                style="@style/Small3BlackText"
+                android:text="@string/vehicle_registration_certifcate" />
+
+            <TextView
+                style="@style/Small3BlackText"
+                android:text="@string/vehicle_personal_identity_card" />
+
+            <TextView
+                style="@style/Small3BlackText"
+                android:text="@string/vehicle_invoice" />
+
+            <TextView
+                style="@style/SmallBlackText"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/field_required" />
+
+            <LinearLayout
+                android:id="@+id/linear_image_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginTop="@dimen/margin_17"
+                android:background="@drawable/border_area_text">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_image_vehicle"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_20"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/btn_Capture"
+                    style="@style/Small4WhiteBoldText"
+                    android:background="@drawable/button_gray_background"
+                    android:text="@string/capture"
+                    android:layout_centerHorizontal="true"
+                    android:paddingHorizontal="@dimen/padding_50"/>
+
+                <ImageButton
+                    android:layout_toRightOf="@+id/btn_Capture"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btn_guide"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_question"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+            <TextView
+                style="@style/MediumBlackBoldText"
+                android:layout_marginTop="@dimen/margin_34"
+                android:text="@string/note" />
+
+            <EditText
+                android:id="@+id/edt_note"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:background="@drawable/border_area_text"
+                android:gravity="top" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/btn_send_request"
+                style="@style/Small4WhiteBoldText"
+                android:background="@drawable/button_gray_background"
+                android:paddingRight="@dimen/padding_30"
+                android:paddingLeft="@dimen/padding_30"
+                android:text="@string/send_request" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

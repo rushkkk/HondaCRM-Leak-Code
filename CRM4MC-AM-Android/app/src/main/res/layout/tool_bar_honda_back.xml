@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_header"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/description_image"
+            android:focusable="true"
+            android:padding="@dimen/padding_16"
+            app:srcCompat="@drawable/ic_back_black" />
+
+        <TextView
+            android:id="@+id/tvTitleHonda"
+            style="@style/Medium3BlackBoldText"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackground"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/lb_title_honda" />
+
+        <ImageView
+            android:id="@+id/imgNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+
+            android:layout_marginEnd="6dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/description_image"
+            android:scaleType="centerCrop"
+            android:layout_toLeftOf="@+id/imgUserAvatar"
+            android:src="@drawable/ic_notification" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgUserAvatar"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/image_user_profile_default"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:civ_border_color="#BFBFBF"
+            app:civ_border_width="2dp"
+            android:layout_marginRight="@dimen/margin_10"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

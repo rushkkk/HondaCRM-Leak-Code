@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:background="@drawable/border_shadow_item_connected_detail"
+    android:gravity="center"
+    android:minHeight="160dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_item_connected_detail_img"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="2dp"
+        app:srcCompat="@drawable/ic_battery_voltage" />
+
+    <TextView
+        android:id="@+id/tv_item_connected_detail_title"
+        style="@style/SmallBlackGrayText"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Engine temperature" />
+
+    <TextView
+        android:id="@+id/tv_item_connected_detail_content"
+        style="@style/XLargeBlackText"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:text="---" />
+
+</LinearLayout>

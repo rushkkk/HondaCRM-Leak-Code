@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_20"
+    android:paddingRight="@dimen/padding_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtIntroduce"
+            style="@style/MediumBlackBoldText"
+            android:layout_gravity="center"
+            android:text="@string/add_vehicle_nfc_tittle" />
+
+        <ImageView
+            android:id="@+id/ic_add_vin_tutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            app:srcCompat="@drawable/ic_question" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/gr_radio_select_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioAutomobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorBlackGray"
+            android:text="@string/automobile" />
+
+        <RadioButton
+            android:id="@+id/radioMotocycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_50"
+            android:buttonTint="@color/colorBlackGray"
+            android:checked="true"
+            android:text="@string/motorcycle" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:weightSum="2">
+
+        <EditText
+            android:cursorVisible="false"
+            android:inputType="text"
+            android:ellipsize="end"
+            android:id="@+id/edit_vin_number_nfc"
+            style="@style/MediumBlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:lines="1"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_weight="1"
+            android:scrollbars="horizontal"
+            android:scrollbarSize="3dp"
+            android:scrollbarThumbHorizontal="@color/colorRed"
+            android:background="@drawable/textview_disable" />
+
+        <TextView
+            android:id="@+id/txt_open_nfc"
+            style="@style/LargeBlackBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_add_vehicle_nfc_background"
+            android:gravity="center"
+            android:text="@string/nfc" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_submit_vin_nfc"
+        style="@style/MediumWhileBoldText"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="@string/btn_ok_low_case"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/margin_1"
+    android:layout_marginBottom="@dimen/margin_15"
+    android:layout_marginTop="@dimen/margin_20"
+    android:layout_marginEnd="@dimen/margin_1"
+    app:cardCornerRadius="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_20"
+        android:paddingEnd="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_20">
+
+        <TextView
+            android:id="@+id/tv_titleHistory"
+            style="@style/Small2BlackBoldText"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:text="@string/tv_titleHistory" />
+
+        <LinearLayout
+            android:id="@+id/layout_service_history"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_serviceHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_titleHistory"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_gravity="end"
+                android:id="@+id/tv_seeAll"
+                style="@style/SmallRedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_12"
+                android:text="@string/tv_seeAll" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCanGetServiceHistory"
+            style="@style/SmallBlackText"
+            android:textAlignment="center"
+            android:text="@string/tv_titleNotHistory"
+            android:visibility="visible" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

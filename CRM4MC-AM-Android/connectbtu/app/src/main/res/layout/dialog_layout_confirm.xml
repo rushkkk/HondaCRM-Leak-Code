@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_dialog"
+    android:layout_height="@dimen/height_dialog"
+    android:layout_marginLeft="@dimen/margin_left_dialog"
+    android:background="?attr/dialogBg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/padding_dialog_left"
+        android:paddingRight="@dimen/padding_dialog_right">
+
+        <TextView
+            android:id="@+id/txtMessageDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_message_connect_fail_notice"
+            android:textColor="?attr/dialogTitleTextColor"
+            android:textSize="@dimen/text_size_message_dialog" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMessageDialog"
+            android:layout_marginTop="@dimen/margin_top_button_dialog"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="@dimen/button_width_size_dialog"
+                android:layout_height="@dimen/button_height_size_dialog"
+                android:background="@drawable/dialog_btn_selector"
+                android:gravity="center"
+                android:text="@string/text_button_dialog_ok"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_message_dialog"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

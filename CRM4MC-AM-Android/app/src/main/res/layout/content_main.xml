@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.home.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabsBottom">
+
+        <vn.co.honda.hondacrm.ui.customview.ViewPagerNoSwipe
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_gift_code_divider"
+        android:layout_above="@+id/tabsBottom" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabsBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@null"
+        app:tabMode="fixed">
+
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>

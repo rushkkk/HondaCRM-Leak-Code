@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_scroll_vehicle_infor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_20"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingEnd="@dimen/padding_20"
+        android:paddingBottom="@dimen/padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgVehicleImage"
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/description_image"
+                        android:scaleType="fitXY"
+                        tools:src="@drawable/honda" />
+
+                    <ImageView
+                        android:id="@+id/imgVehicleWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:contentDescription="@string/description_image"
+                        app:srcCompat="@drawable/ic_warning_vh" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txtVehicleLicensePlate"
+                    style="@style/SmallBlack50BoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    tools:text="Honda120000000000000000000000000000000000000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtVehicleName"
+                    style="@style/MediumBlackBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SmallBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lb_vh_model" />
+
+                    <TextView
+                        android:id="@+id/txtVehicleModel"
+                        style="@style/SmallBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_7"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SmallBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lb_vh_type" />
+
+                    <TextView
+                        android:id="@+id/txtVehicleType"
+                        style="@style/SmallBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_7"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SmallBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lb_vh_Color" />
+
+                    <TextView
+                        android:id="@+id/txtVehicleColor"
+                        style="@style/SmallBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_7"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_mc_cc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SmallBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lb_vh_Capacity" />
+
+                    <TextView
+                        android:id="@+id/txtVehicleCC"
+                        style="@style/SmallBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_7"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        tools:text="150cc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_vehicle_warranty_infor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/SmallBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lb_vh_Warranty_Info" />
+
+                    <TextView
+                        android:id="@+id/txt_vehicle_warranty_infor"
+                        style="@style/SmallBlackBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        tools:text="2018/12/12 - 2020/12/12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtActiveWarranty"
+                    style="@style/SmallRedText"
+                    android:text="@string/active_warranty"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtExtendWarranty"
+                    style="@style/SmallRedText"
+                    android:text="@string/extend_warranty"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_extended_warranty_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SmallBlackText"
+                        android:text="@string/lb_extended_warranty_info" />
+
+                    <TextView
+                        android:id="@+id/lb_vehicle_extend_warranty_infor"
+                        style="@style/SmallBlackBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="1 year, until 2020/12/12dsđâsđá" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/btn_connect"
+                    style="@style/MicroWhiteBoldText"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingStart="@dimen/padding_8"
+                    android:paddingEnd="@dimen/padding_8"
+                    android:text="@string/lb_connect"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    style="@style/MicroBlackText"
+                    android:layout_width="wrap_content"
+                    android:drawableStart="@drawable/ic_connected"
+                    android:drawablePadding="@dimen/padding_8"
+                    android:gravity="center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/connect_is_connected"
+                    android:textAlignment="center"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/btn_book_service"
+                    style="@style/MicroWhiteBoldText"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/padding_8"
+                    android:paddingEnd="@dimen/padding_8"
+                    android:text="@string/book_a_service"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_pi"
+            layout="@layout/item_pi_check" />
+
+        <include
+            android:id="@+id/layout_maintain"
+            layout="@layout/item_maintenance_infor" />
+
+        <include
+            android:id="@+id/layout_service_booking"
+            layout="@layout/item_service_booking_infor" />
+
+        <include
+            android:id="@+id/layout_recall_infor"
+            layout="@layout/item_recall_information" />
+
+        <include layout="@layout/item_service_booking_history" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.activities.booking_service.BookingServiceActivity">
+
+    <include layout="@layout/tool_bar_back" />
+
+    <include
+        android:layout_marginEnd="@dimen/margin_23"
+        android:layout_marginStart="@dimen/margin_23"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/margin_8"
+        layout="@layout/step_view_booking_service" />
+
+    <FrameLayout
+        android:id="@+id/frame_booking_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

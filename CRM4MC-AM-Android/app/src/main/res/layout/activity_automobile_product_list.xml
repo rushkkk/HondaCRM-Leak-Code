@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.products.AutomobileProductListActivity">
+
+    <include layout="@layout/tool_bar_honda_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_15">
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_total"
+            style="@style/MediumBlackGrayText"
+            />
+
+        <TextView
+            android:id="@+id/tv_num_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28 products"
+            style="@style/MediumBlackBoldText"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toEndOf="@+id/tv_total" />
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_filter"
+            style="@style/MediumBlackGrayText"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_toStartOf="@id/img_filter"
+            />
+
+
+        <ImageView
+            android:id="@+id/img_filter"
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_20"
+            android:src="@drawable/ic_filter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_car_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/margin_10">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

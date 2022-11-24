@@ -1,0 +1,554 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_color</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TabLayoutTextStyleEvent">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">#000
+        </item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">#000</item> <!-- activated color change as you wish -->
+        <item name="android:textColor">#FFFF3F3C</item> <!-- checkbox text color -->
+    </style>
+
+    <style name="CustomShadow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:background">@drawable/app_bar_shadow</item>
+    </style>
+
+    <style name="CustomDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/black_16</item>
+    </style>
+
+    <style name="ProgressDialog">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:indeterminateDrawable">@drawable/custom_progress_bar</item>
+    </style>
+
+    <!-- Text Nano Style-->
+    <style name="NanoWhiteText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_nano</item>
+    </style>
+
+    <style name="NanoBlackText" parent="NanoWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="NanoBlack96Text" parent="NanoBlackText">
+        <item name="android:textColor">@color/colorBlack96</item>
+    </style>
+
+    <style name="Nano2BlackText" parent="NanoBlackText">
+        <item name="android:textSize">@dimen/font_size_nano_2</item>
+    </style>
+
+    <style name="Nano2Black96Text" parent="Nano2BlackText">
+        <item name="android:textColor">@color/colorBlack96</item>
+    </style>
+
+    <style name="NanoRedText" parent="NanoWhiteText">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="NanoBlack50Text" parent="NanoWhiteText">
+        <item name="android:textColor">@color/colorBlack50</item>
+    </style>
+    <style name="Nano2Black50Text" parent="NanoWhiteText">
+        <item name="android:textColor">@color/colorBlack50</item>
+        <item name="android:textSize">@dimen/font_size_nano_2</item>
+
+    </style>
+    <style name="NanoBlack30Text" parent="NanoWhiteText">
+        <item name="android:textColor">@color/colorBlack30</item>
+    </style>
+
+
+    <!-- Text Micro Style-->
+    <style name="MicroWhiteText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_micro</item>
+    </style>
+
+    <style name="MicroBlackText" parent="MicroWhiteText">
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+    <style name="Micro3BlackText" parent="MicroWhiteText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_size_micro_2</item>
+    </style>
+
+    <style name="MicroBlack30Text" parent="MicroWhiteText">
+        <item name="android:textColor">@color/colorBlack30</item>
+    </style>
+
+    <style name="Micro2Black50Text" parent="Micro2BlackText">
+        <item name="android:textColor">@color/colorBlack50</item>
+    </style>
+    <style name="MicroBlack43Text" parent="MicroWhiteText">
+        <item name="android:textColor">@color/colorBlack43</item>
+    </style>
+    <style name="MicroBlack40Text" parent="MicroWhiteText">
+        <item name="android:textColor">@color/colorBlack40</item>
+    </style>
+
+    <style name="Micro2BlackText" parent="MicroWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Micro2WhiteText" parent="MicroWhiteText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="MicroRedText" parent="MicroWhiteText">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="MicroGray70Text" parent="MicroWhiteText">
+        <item name="android:textColor">@color/colorGray70</item>
+    </style>
+
+    <style name="MicroGray40Text" parent="MicroWhiteText">
+        <item name="android:textColor">@color/colorGray40</item>
+    </style>
+
+    <style name="MicroGrayText" parent="MicroWhiteText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="MicroGreyLabelText" parent="MicroWhiteText">
+        <item name="android:textColor">@color/colorGreyLabel</item>
+    </style>
+
+    <!-- Text Small Style-->
+    <style name="SmallWhiteText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+
+    <style name="SmallGrayCntText" parent="SmallWhiteText">
+        <item name="android:textColor">@color/gray_cnt_vin</item>
+    </style>
+
+    <style name="Small4WhiteText" parent="@style/SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_small_4</item>
+    </style>
+
+    <style name="SmallBrowText" parent="SmallWhiteText">
+        <item name="android:textColor">@color/colorBrow3</item>
+    </style>
+
+    <style name="SmallBlackText" parent="SmallWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="SmallBlack56Text" parent="SmallWhiteText">
+        <item name="android:textColor">@color/colorBlack56</item>
+
+    </style>
+    <style name="SmallBlack40Text" parent="SmallWhiteText">
+        <item name="android:textColor">@color/colorBlack40</item>
+    </style>
+
+    <style name="SmallBlackTextBold" parent="SmallBlackText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SmallGrayTextBold" parent="SmallBlackTextBold">
+        <item name="android:textColor">@color/colorBlackGray</item>
+    </style>
+
+    <style name="SmallRedDarkText" parent="SmallWhiteText">
+        <item name="android:textColor">@color/colorRedDark</item>
+    </style>
+
+    <style name="SmallRed40Text" parent="SmallWhiteText">
+        <item name="android:textColor">@color/colorRed40</item>
+    </style>
+
+    <style name="Small2BlackText" parent="SmallBlackText">
+        <item name="android:textSize">@dimen/font_size_small_2</item>
+    </style>
+
+    <style name="Small2GrayText" parent="Small2BlackText">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Small3WhiteText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_small_3</item>
+    </style>
+
+
+    <style name="Small3BlackText" parent="SmallBlackText">
+        <item name="android:textSize">@dimen/font_size_small_3</item>
+    </style>
+
+    <style name="Small4BlackText" parent="SmallBlackText">
+        <item name="android:textSize">@dimen/font_size_small_4</item>
+    </style>
+
+    <!-- Text Medium Style-->
+    <style name="MediumWhiteText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+    </style>
+
+    <style name="Medium2WhiteText" parent="MediumWhiteText">
+        <item name="android:textSize">@dimen/font_size_medium_2</item>
+    </style>
+
+    <style name="Medium3WhiteText" parent="MediumWhiteText">
+        <item name="android:textSize">@dimen/font_size_medium_3</item>
+    </style>
+
+    <style name="Medium4WhiteText" parent="MediumWhiteText">
+        <item name="android:textSize">@dimen/font_size_medium_4</item>
+    </style>
+
+    <style name="MediumBlackText" parent="MediumWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MediumBlackGrayText" parent="MediumWhiteText">
+        <item name="android:textColor">@color/color_black_gray</item>
+    </style>
+
+    <style name="MediumBlack36Text" parent="MediumWhiteText">
+        <item name="android:textColor">@color/colorBlack36</item>
+    </style>
+
+    <style name="Medium2BlackText" parent="MediumWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Medium3BlackText" parent="Medium3WhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MediumRedText" parent="MediumWhiteText">
+        <item name="android:textColor">@color/colorRedDark</item>
+    </style>
+
+    <style name="Medium3RedText" parent="MediumRedText">
+        <item name="android:textSize">@dimen/font_size_medium_3</item>
+    </style>
+
+    <!--Item_car-->
+    <style name="MediumBrowText" parent="MediumWhiteText">
+        <item name="android:textColor">@color/colorBrow3</item>
+    </style>
+
+    <!-- Text Large Style-->
+    <style name="LargeWhiteText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_large</item>
+    </style>
+
+    <style name="LargeBlackText" parent="LargeWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LargeRedText" parent="LargeWhiteText">
+        <item name="android:textColor">@color/colorRedDark</item>
+    </style>
+
+    <style name="Large5WhiteText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_large_5</item>
+    </style>
+
+    <style name="Large6WhiteText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_large_6</item>
+    </style>
+
+    <style name="Large5WhiteBoldText" parent="Large5WhiteText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Large6WhiteBoldText" parent="Large6WhiteText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Text xLarge Style-->
+    <style name="XLargeWhiteText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_large</item>
+    </style>
+
+    <style name="XLargeBlackText" parent="XLargeWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="XLarge2BlackText" parent="XLargeBlackText">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="XLargeBlackBoldText" parent="XLargeBlackText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_size_big_large_5</item>
+    </style>
+
+    <style name="XLargeRedText" parent="XLargeWhiteText">
+        <item name="android:textColor">@color/colorRedDark</item>
+    </style>
+
+    <!--Text xxLarge Style-->
+    <style name="XXLargeBlackText" parent="SmallBlackText">
+        <item name="android:textSize">@dimen/font_size_big_large_5</item>
+    </style>
+
+    <style name="XXLargeRedText" parent="XXLargeBlackText">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="XLarge2RedText" parent="XLargeRedText">
+        <item name="android:textSize">@dimen/font_size_big_large_5</item>
+    </style>
+
+    <style name="XLargeRedBoldText" parent="XLargeWhiteText">
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <!-- Text bold style-->
+    <style name="MicroBlackBoldText" parent="MicroBlackText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Micro2WhiteBoldText" parent="MicroWhiteText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MediumWhiteBoldText" parent="MediumWhiteText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MediumBlackBoldText" parent="MediumBlackText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MediumRedBoldText" parent="MediumRedText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Medium3BlackBoldText" parent="Medium3BlackText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="LargeWhiteBoldText" parent="LargeWhiteText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="SmallRedText" parent="SmallWhiteText">
+        <item name="android:textColor">@color/colorRedDark</item>
+    </style>
+
+    <style name="SmallBlackBoldText" parent="SmallBlackText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Small2BlackBoldText" parent="Small2BlackText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Small4WhiteBoldText" parent="Small4WhiteText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SmallBlack30BoldText" parent="SmallBlackBoldText">
+        <item name="android:textColor">@color/colorBlack30</item>
+    </style>
+    <style name="SmallBlack50BoldText" parent="SmallBlackBoldText">
+        <item name="android:textColor">@color/colorBlack50</item>
+    </style>
+
+    <style name="Small3BlackBoldText" parent="SmallBlackBoldText">
+        <item name="android:textSize">@dimen/font_size_small_3</item>
+    </style>
+
+    <style name="Small3WhiteBoldText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_small_3</item>
+    </style>
+
+    <style name="SmallBlackGrayText" parent="SmallBlackText">
+        <item name="android:textColor">@color/colorBlackGray</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="SmallBlackGrayBoldText" parent="SmallBlackText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Edit Text Small Style-->
+    <style name="SmallWhiteEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/app_bar_shadow</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="SmallRedEditText" parent="SmallWhiteEditText">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="Small3RedButtonRound" parent="Small3WhiteText">
+
+        <item name="android:background">@drawable/selector_red_button</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:paddingRight">50dp</item>
+    </style>
+
+    <!--tab home-->
+    <style name="TextViewTabHome">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@drawable/selector_custom_tab_home_text</item>
+    </style>
+
+    <style name="EditTextRegister" parent="SmallBlackText">
+        <item name="android:textSize">@dimen/font_size_small_3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/margin_10</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingBottom">@dimen/margin_7</item>
+        <item name="android:maxLength">100</item>
+    </style>
+
+    <style name="ToggleSwitchTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/colorBlueBright</item>
+    </style>
+
+
+    <style name="AudioFileInfoOverlayText">
+        <item name="android:paddingLeft">4px</item>
+        <item name="android:paddingBottom">4px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <!-- style for spinner connected vehicle -->
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem" />
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem" />
+
+    <style name="LargeBlackBoldText" parent="LargeBlackText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Text bold style-->
+    <style name="MediumWhileBoldText" parent="MediumWhiteText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SmallBlack28Text" parent="SmallWhiteText">
+        <item name="android:textColor">@color/colorBlack28</item>
+    </style>
+
+    <style name="Small14BlackBoldText" parent="SmallBlackText">
+        <item name="android:textSize">@dimen/font_size_small_4</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Small14BlackText" parent="SmallBlackText">
+        <item name="android:textSize">@dimen/font_size_small_4</item>
+    </style>
+    <style name="Small14WhiteText" parent="Small14BlackBoldText">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    //tab profile
+
+    <style name="TextViewTabProfile">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/selector_tab_profile_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Animations" />
+
+    <style name="Animations.SmileWindow">
+        <item name="android:windowEnterAnimation">@anim/slide_in_top_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom_dialog</item>
+    </style>
+
+    <style name="MicroBlack50Text" parent="MicroWhiteText">
+        <item name="android:textColor">@color/colorBlack50</item>
+    </style>
+    <!--rating bar feedback service-->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorGray70</item>
+        <item name="colorControlActivated">@color/red</item>
+    </style>
+    <style name="SmallBlackText2" parent="SmallWhiteText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_size_small_2</item>
+    </style>
+    <style name="SmallYellowText" parent="SmallWhiteText">
+        <item name="android:textColor">@color/colorYellowVh</item>
+    </style>
+    <style name="MicroWhiteBoldText" parent="MicroWhiteText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_nano_2</item>
+    </style>
+
+    <color name="colorCursor">#337BF4</color>
+</resources>

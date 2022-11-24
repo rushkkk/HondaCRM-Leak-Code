@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin_30"
+    android:background="@null">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/popupnotify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/bg_recall_infor"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingStart="@dimen/padding_16"
+            android:paddingTop="@dimen/padding_10"
+            android:paddingEnd="@dimen/padding_16"
+            android:paddingBottom="@dimen/padding_20"
+            tools:ignore="RtlHardcoded,UselessParent">
+            <TextView
+                android:id="@+id/title_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_notification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small_4"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_dismiss_dialog_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@color/white"
+                android:padding="@dimen/padding_10"
+                android:src="@drawable/ic_dismiss_notifi"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeNotify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="7dp">
+
+             <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarThumbVertical="@drawable/bg_scroll_bar_notify">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lv_notification_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/con_tro_notify"
+        android:layout_width="14dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/margin_30"
+        android:layout_marginBottom="-20dp"
+        android:background="@drawable/bg_notification_nhon">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_9"
+            android:background="@color/white">
+
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

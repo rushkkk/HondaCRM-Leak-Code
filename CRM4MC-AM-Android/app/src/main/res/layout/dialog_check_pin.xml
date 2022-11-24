@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:layout_gravity="center"
+    android:background="@drawable/border_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/imClose"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_close_black_24dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@drawable/custom_thumb_scrollview">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <vn.co.honda.hondacrm.ui.customview.ZoomableImageView
+                android:id="@+id/imCheckPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_vin" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

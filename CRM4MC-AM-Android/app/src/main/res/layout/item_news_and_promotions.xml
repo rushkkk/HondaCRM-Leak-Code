@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:id="@+id/img_events_home"
+        android:layout_width="160dp"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_height="90dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/image_profile_tabevent"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/honda" />
+    </android.support.v7.widget.CardView>
+    <TextView
+        style="@style/SmallBlackBoldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:text="60 Years of Hondard"/>
+    <TextView
+        style="@style/SmallGrayCntText"
+        android:textColor="#808080"
+        android:layout_marginTop="@dimen/margin_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get an insider’s look at the process, people..."/>
+</LinearLayout>

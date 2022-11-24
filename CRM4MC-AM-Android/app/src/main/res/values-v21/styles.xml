@@ -1,0 +1,169 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="CustomShadow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:background">@drawable/app_bar_shadow</item>
+    </style>
+
+    <style name="CustomDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/black_16</item>
+    </style>
+
+    <style name="ProgressDialog">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:indeterminateDrawable">@drawable/custom_progress_bar</item>
+    </style>
+
+    <!-- Text Style Small-->
+
+    <style name="MicroWhiteText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_micro</item>
+    </style>
+
+    <style name="SmallWhiteText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+
+    <style name="SmallBlackText" parent="SmallWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SmallRedDarkText" parent="SmallWhiteText">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!-- Text Style Medium-->
+    <style name="MediumWhiteText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+    </style>
+
+    <style name="MediumBlackText" parent="MediumWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MediumRedText" parent="MediumWhiteText">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!-- Text Style Large-->
+    <style name="LargeWhiteText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_large</item>
+    </style>
+
+    <style name="LargeBlackText" parent="LargeWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LargeRedText" parent="LargeWhiteText">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+
+    <!-- Text Style xLarge-->
+    <style name="XLargeWhiteText" parent="SmallWhiteText">
+        <item name="android:textSize">@dimen/font_size_large</item>
+    </style>
+
+    <style name="XLargeBlackText" parent="XLargeWhiteText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="XLargeRedText" parent="XLargeWhiteText">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="BlackText16" parent="SmallBlackText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BlackText20" parent="SmallBlackText">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="RedText20">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SmallRedEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/app_bar_shadow</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="SmallWhiteEditText" parent="SmallRedEditText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MediumBlackBoldText" parent="MediumBlackText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--tab home-->
+    <style name="TextViewTabHome">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">9dp</item>
+        <item name="android:textColor">@drawable/selector_custom_tab_home_text</item>
+    </style>
+//tab profile
+    <style name="TextViewTabProfile">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@drawable/selector_tab_profile_text</item>
+    </style>
+</resources>

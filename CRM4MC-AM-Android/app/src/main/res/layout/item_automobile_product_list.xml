@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_ribbon_new"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:src="@drawable/ic_ribbon_new"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_car"
+            android:layout_width="@dimen/margin_150"
+            android:layout_height="@dimen/margin_150"
+            android:src="@drawable/car_jazz"
+            android:layout_marginLeft="@dimen/margin_5"/>
+
+        <TextView
+            android:id="@+id/tv_car_name"
+            style="@style/MediumBlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_toEndOf="@+id/img_car"
+            android:layout_toStartOf="@+id/btn_detail"
+            android:text="Honda Jazz" />
+
+        <TextView
+            android:id="@+id/tv_proposed_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_car_name"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toRightOf="@+id/img_car"
+            android:text="@string/tv_proposed_price" />
+
+        <ImageView
+            android:id="@+id/btn_detail"
+            android:layout_width="@dimen/margin_25"
+            android:layout_height="@dimen/margin_25"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/ic_detail_button" />
+
+        <TextView
+            android:id="@+id/tv_num_price"
+            style="@style/MediumBlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_proposed_price"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_toEndOf="@+id/img_car"
+            tools:text="544,000,000 VND" />
+
+        <ImageView
+            android:id="@+id/img_estimate_cost"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_35"
+            android:layout_below="@+id/tv_num_price"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toEndOf="@+id/img_car"
+            android:src="@drawable/ic_estimate_cost" />
+
+        <ImageView
+            android:id="@+id/img_test_drive"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_35"
+            android:layout_below="@+id/tv_num_price"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toEndOf="@+id/img_estimate_cost"
+            android:src="@drawable/ic_test_drive" />
+
+        <ImageView
+            android:id="@+id/img_ribbon_promotion"
+            android:layout_width="@dimen/margin_15"
+            android:layout_height="@dimen/margin_15"
+            android:layout_below="@+id/img_estimate_cost"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toEndOf="@+id/img_car"
+            android:src="@drawable/ic_ribbon_promotion"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_title_promotion"
+            style="@style/SmallRedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_estimate_cost"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_toRightOf="@+id/img_ribbon_promotion"
+            android:text="@string/tv_title_promotion"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">ConnMC</string>
+    <string name="logo">logo</string>
+    <string name="title_turn_bluetooth_dialog">This application requires bluetooth connection. Please turn on bluetooth?</string>
+    <string name="scan_for_vehicle">Scan for vehicle</string>
+    <string name="you_have_not_registered_any_vehicle">You have not registered any vehicle</string>
+    <string name="userNameHint">Username</string>
+    <string name="passwordHint">Password</string>
+
+    <string name="login">Login</string>
+    <string name="login_failed">Login failed!\n Please try again</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="progress">Connecting…</string>
+    <string name="please_select_the_vehicle_to_connected">Please select the vehicle to connected</string>
+    <string name="submit">Submit</string>
+    <string name="enter_username">Enter username</string>
+    <string name="title_not_found_bluetooth">No Bluetooth devices found</string>
+    <string name="message_not_found_bluetooth">Make sure the device you want to connect is visible to other devices</string>
+    <string name="text_button_dialog_quit">Quit</string>
+    <string name="text_button_dialog_cancel">Cancel</string>
+    <string name="text_button_dialog_ok">OK</string>
+    <string name="text_button_dialog_register_again">Register again</string>
+    <string name="text_button_yes">YES</string>
+    <string name="text_button_no">NO</string>
+    <string name="text_button_reconnect">Retry</string>
+    <string name="text_message_require_bluetooth">This application requires\nbluetooth connection. Please\nturn on bluetooth.</string>
+    <string name="text_message_require_notification">This application requires\nnotification access. Please\nenable notification access.</string>
+    <string name="text_message_require_location">This application requires\nlocation service. Please\nturn on location.</string>
+    <string name="text_message_connect_fail_notice">Connection failed or device is\nnot expected vehicle!</string>
+    <string name="text_message_timeout_reconnect">Cannot connect to your vehicle.\nPlease make sure your vehicle\nis nearby. Would you like to\nretry?</string>
+    <string name="enter_pin">Enter verification Pin</string>
+    <string name="pin_wrong">Pin not correct. Please try again.</string>
+    <string name="pin_wrong_3_time">Connection is refused\nbecause you have entered\nwrong PIN for 3 times consecutively</string>
+    <string name="connection_problem">Connection problem!\n Please retry</string>
+    <string name="msg_too_many_user">Too many smartphones were\n registered. Inactive smartphone \nfor longest time will be\n deregistered and will need\n to register again</string>
+    <string name="msg_inactive_user">Another user is currently ACTIVE\nDo you still want to connect with\nthis BTU and make that user INACTIVE?</string>
+    <string name="msg_deleted_user">Your previous connection was\nremove by the vehicle. Please\nregister again.</string>
+    <string name="select_theme">Select your appearance</string>
+    <string name="theme_1">Black</string>
+    <string name="theme_2">Red</string>
+    <string name="theme_3">Black pattern</string>
+    <string name="theme_4">Red pattern</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="display_raw_data">Display information as raw data</string>
+    <string name="received_msg">Received message:</string>
+</resources>

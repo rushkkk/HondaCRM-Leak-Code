@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".ui.activities.connected.view.PinCodeActivity">
+
+    <include layout="@layout/tool_bar_connected" />
+
+    <LinearLayout
+        android:id="@+id/lyCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_report_pincode"
+            style="@style/MediumBlackText"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enter_verification_pin" />
+
+        <EditText
+            android:id="@+id/ed_pin_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/shape_text_input"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz"
+            android:gravity="center"
+            android:hint="@string/enter_pin_code"
+            android:maxLength="32"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/btn_submit"
+            android:layout_width="170dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_gray"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyCheckPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_check_pin_code"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_check_pin_code"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

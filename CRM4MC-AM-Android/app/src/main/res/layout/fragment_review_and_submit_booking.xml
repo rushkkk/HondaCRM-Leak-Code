@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/margin_15"
+        card_view:cardCornerRadius="@dimen/margin_8"
+        card_view:cardElevation="@dimen/margin_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_14"
+            android:paddingRight="@dimen/padding_14"
+            android:paddingBottom="@dimen/margin_15">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_22"
+                android:paddingBottom="@dimen/margin_7">
+
+                <ImageView
+                    android:id="@+id/img_logo_honda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_7"
+                    android:contentDescription="@string/description_image"
+                    android:src="@drawable/ic_logo_honda" />
+
+                <TextView
+                    android:id="@+id/tv_dealer_name"
+                    style="@style/Small3BlackBoldText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_logo_honda"
+                    android:text="Mỹ Đình" />
+
+                <ImageView
+                    android:id="@+id/img_phone_dealer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_toStartOf="@+id/tv_dealer_phone_number"
+                    android:contentDescription="@string/description_image"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/tv_dealer_phone_number"
+                    style="@style/MicroBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:gravity="end|bottom"
+                    android:text="0388230926" />
+
+                <TextView
+                    android:id="@+id/tv_dealer_address"
+                    style="@style/MicroBlack40Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_logo_honda"
+                    android:layout_marginStart="@dimen/margin_3"
+                    android:text="Địa chỉ: 2 Lê Đức Thọ, Mai Dịch" />
+
+                <TextView
+                    android:id="@+id/tv_label_work_time"
+                    style="@style/MicroBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dealer_address"
+                    android:layout_marginStart="@dimen/margin_3"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:text="@string/lb_working_time" />
+
+                <TextView
+                    android:id="@+id/tv_dealer_work_time"
+                    style="@style/MicroBlackText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dealer_address"
+                    android:layout_toEndOf="@+id/tv_label_work_time"
+                    android:text="8:00-17:00" />
+
+                <TextView
+                    android:id="@+id/tv_dealer_distance"
+                    style="@style/SmallBlackBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_label_work_time"
+                    android:layout_marginStart="@dimen/margin_3"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="0.8km" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.25dp"
+                    android:layout_below="@+id/tv_dealer_distance"
+                    android:layout_marginTop="@dimen/margin_11"
+                    android:background="@color/colorGray60" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_16"
+                android:paddingBottom="@dimen/margin_7">
+
+                <TextView
+                    android:id="@+id/tv_selected_time"
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_step5_select_time" />
+
+                <TextView
+                    android:id="@+id/tv_calendar_time"
+                    style="@style/MicroBlack40Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_selected_time"
+                    android:text="2019/05/10 10:00 - 11:00 AM" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.25dp"
+                    android:layout_below="@+id/tv_calendar_time"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:background="@color/colorGray60" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_16"
+                android:paddingBottom="@dimen/margin_7">
+
+                <TextView
+                    android:id="@+id/lb_selected_type"
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_step5_type_service" />
+
+                <TextView
+                    android:id="@+id/tv_selected_type"
+                    style="@style/MicroBlack40Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lb_selected_type"
+                    android:text="Common Repair" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.25dp"
+                    android:layout_below="@+id/tv_selected_type"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:background="@color/colorGray60" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_16"
+                android:paddingBottom="@dimen/margin_7">
+
+                <TextView
+                    android:id="@+id/lb_describe_request"
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_step5_describe" />
+
+                <TextView
+                    android:id="@+id/tv_describe_request"
+                    style="@style/MicroBlack40Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lb_describe_request"
+                    android:text="My car has a problem in..." />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.25dp"
+                    android:layout_below="@+id/tv_describe_request"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:background="@color/colorGray60" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_16"
+                android:paddingBottom="@dimen/margin_7">
+
+                <TextView
+                    android:id="@+id/tv_expected_time"
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_step5_finishing_time" />
+
+                <TextView
+                    android:id="@+id/tv_finishing_time"
+                    style="@style/MicroBlack40Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_expected_time"
+                    android:text="2019/05/20 15:00 - 16:00" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.25dp"
+                    android:layout_below="@+id/tv_finishing_time"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:background="@color/colorGray60" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_marginBottom="@dimen/margin_30"
+                android:background="@drawable/red_button"
+                android:padding="@dimen/padding_10"
+                android:text="@string/btn_submit_booking"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.v4.widget.NestedScrollView>

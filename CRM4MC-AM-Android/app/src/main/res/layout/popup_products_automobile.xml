@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popuplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_recall_infor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btn_dismiss_dialog_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@color/white"
+            android:padding="@dimen/padding_10"
+            android:src="@drawable/ic_dismiss_notifi"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_filter_products"
+            style="@style/MediumBlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/tv_filter_products" />
+
+        <TextView
+            android:id="@+id/tv_Origin"
+            style="@style/MediumBlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_filter_products"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/tv_Origin" />
+
+        <CheckBox
+            android:id="@+id/chk_Imported"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Origin"
+            android:text="@string/chk_Imported" />
+
+        <CheckBox
+            android:id="@+id/chk_Asembly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk_Imported"
+            android:text="@string/chk_Asembly" />
+
+
+        <TextView
+            android:id="@+id/tv_price_range"
+            style="@style/MediumBlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk_Asembly"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/tv_price_range" />
+
+        <LinearLayout
+            android:id="@+id/linear_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_price_range"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/relative_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_from"
+                    style="@style/MediumBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/tv_from" />
+
+                <EditText
+                    android:id="@+id/edt_from"
+                    android:layout_width="@dimen/margin_200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/tv_from"
+                    android:background="@drawable/border_edit_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/relative_left"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_to"
+                    style="@style/MediumBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/tv_to" />
+
+                <EditText
+                    android:id="@+id/edt_to"
+                    android:layout_width="@dimen/margin_200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/tv_to"
+                    android:background="@drawable/border_edit_text" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_Styling"
+            style="@style/MediumBlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_input"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/tv_Styling" />
+
+        <CheckBox
+            android:id="@+id/chk_Sedan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Styling"
+            android:text="@string/chk_Sedan" />
+
+        <CheckBox
+            android:id="@+id/chk_SUV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk_Sedan"
+            android:text="@string/chk_SUV" />
+
+        <CheckBox
+            android:id="@+id/chk_HatchBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk_SUV"
+            android:text="@string/chk_HatchBack" />
+
+        <TextView
+            android:id="@+id/tv_Color"
+            style="@style/MediumBlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk_HatchBack"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/tv_Color" />
+
+        <LinearLayout
+            android:id="@+id/linear_chk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Color"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/linear_chk_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/chk_Red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Color"
+                    android:text="@string/chk_Red" />
+
+                <CheckBox
+                    android:id="@+id/chk_Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chk_Red"
+                    android:text="@string/chk_Green" />
+
+                <CheckBox
+                    android:id="@+id/chk_White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chk_Green"
+                    android:text="@string/chk_White" />
+
+
+                <CheckBox
+                    android:id="@+id/chk_Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chk_White"
+                    android:text="@string/chk_Black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_chk_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/relative_left"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/chk_Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Color"
+                    android:text="@string/chk_Blue" />
+
+                <CheckBox
+                    android:id="@+id/chk_Green_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chk_Blue"
+                    android:text="@string/chk_Green" />
+
+                <CheckBox
+                    android:id="@+id/chk_Yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chk_Green_right"
+                    android:text="@string/chk_Yellow" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

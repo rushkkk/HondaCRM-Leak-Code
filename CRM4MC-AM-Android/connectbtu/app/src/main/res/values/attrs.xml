@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="logo" format="reference"/>
+    <attr name="logoTitle" format="reference"/>
+    <attr name="logoLogin" format="reference"/>
+
+    <attr name="actionBarColor" format="reference" />
+    <attr name="actionBarDividerColor" format="reference"/>
+    <attr name="screenBg" format="reference" />
+
+    <attr name="splashScreenBg" format="reference"/>
+
+    <attr name="loginBtnBg" format="reference"/>
+    <attr name="bgLoginEditText" format="reference"/>
+    <attr name="rawDataBtn" format="reference"/>
+
+    <attr name="inputScreenBg" format="reference"/>
+    <attr name="inputEdittextBg" format="reference"/>
+
+    <attr name="dialogBg" format="reference"/>
+
+    <attr name="dialogTitleTextColor" format="reference"/>
+
+    <attr name="listItemBg" format="reference"/>
+    <attr name="listItemIconColor" format="reference"/>
+
+    <attr name="editTextBg" format="reference"/>
+    <attr name="mainTextColor" format="reference"/>
+    <attr name="secondaryTextColor" format="reference"/>
+
+
+    <attr name="icWarningTint" format="reference"/>
+    <attr name="redBtnBg" format="reference"/>
+
+    <attr name="theme1Selector" format="reference"/>
+    <attr name="theme2Selector" format="reference"/>
+    <attr name="theme3Selector" format="reference"/>
+    <attr name="theme4Selector" format="reference"/>
+    <attr name="themeTitleSelector" format="reference"/>
+</resources>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_19">
+
+        <LinearLayout
+            android:id="@+id/llDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_12"
+                android:layout_marginRight="@dimen/padding_12"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SmallBlack28Text"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lb_profile_birthdate" />
+
+                <TextView
+                    android:id="@+id/txtBirthdate"
+                    style="@style/SmallBlackText"
+                    android:layout_marginBottom="9dp"
+                    tools:text="22/05/1989" />
+
+                <TextView
+                    style="@style/SmallBlack28Text"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lb_profile_gender" />
+
+                <TextView
+                    android:id="@+id/txtfill_Gender"
+                    style="@style/SmallBlackText"
+                    android:layout_marginBottom="9dp"
+                    tools:text="Male" />
+
+                <TextView
+                    style="@style/SmallBlack28Text"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lb_profile_email" />
+
+                <TextView
+                    android:id="@+id/txtEmailUser"
+                    style="@style/SmallBlackText"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxLines="1"
+                    tools:text="HaFieuFong@gmail.com" />
+
+                <TextView
+                    style="@style/SmallBlack28Text"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lb_profile_job" />
+
+                <TextView
+                    android:id="@+id/txtfill_Update"
+                    style="@style/SmallBlackText"
+                    android:layout_marginBottom="9dp"
+                    android:ellipsize="end"
+                    tools:text="Design" />
+
+
+                <TextView
+                    style="@style/SmallBlack28Text"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lb_profile_id_number" />
+
+                <TextView
+                    android:id="@+id/txtLoyalti"
+                    style="@style/SmallBlackText"
+                    android:layout_marginBottom="12dp"
+                    android:ellipsize="end"
+                    tools:text="12345678" />
+
+                <TextView
+                    style="@style/SmallBlack28Text"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lb_profile_address" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    style="@style/SmallBlackText"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxLines="1"
+                    tools:text="218 Đội cấn ,Ba Đìinh Hà Nội" />
+
+                <TextView
+                    style="@style/SmallBlack28Text"
+                    android:layout_marginTop="@dimen/margin_27"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/Profile_completeness" />
+
+
+            </LinearLayout>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:id="@+id/process_profile"
+                android:layout_marginTop="@dimen/margin_19"
+                android:max="6"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumbTint="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginRight="@dimen/margin_12"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SmallBlack28Text"
+                android:text="@string/lb_profile_birthdate" />
+
+            <EditText
+                android:id="@+id/edit_profile_birthday"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@null"
+                android:drawableEnd="@mipmap/ic_profile_date_time"
+                android:drawableRight="@mipmap/ic_profile_date_time"
+                android:focusable="false"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                tools:text="@string/birthdate" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_7"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:background="@color/colorBlack50" />
+
+            <TextView
+                android:id="@+id/lb_Invalid_Birthday"
+                style="@style/MicroRedText"
+                android:text="@string/Invalid_Birthday"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/SmallBlack28Text"
+                android:text="@string/lb_profile_gender" />
+
+            <Spinner
+                android:id="@+id/spnCategory"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_7"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:background="@color/colorBlack50" />
+
+            <TextView
+                style="@style/MicroRedText"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/SmallBlack28Text"
+                android:text="@string/lb_profile_email" />
+
+            <EditText
+                android:id="@+id/edit_profile_mail"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:autofillHints=""
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                tools:text="@string/email" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_7"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:background="@color/colorBlack50" />
+
+            <TextView
+                android:id="@+id/lb_Invalid_Email"
+                style="@style/MicroRedText"
+                android:text="@string/Invalid_email_address"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/SmallBlack28Text"
+                android:text="@string/lb_profile_job" />
+
+            <EditText
+                android:id="@+id/edit_profile_job"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@null"
+                android:ellipsize="end"
+                android:inputType="textEmailAddress"
+                tools:text="@string/job" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_7"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:background="@color/colorBlack50" />
+
+            <TextView
+                style="@style/MicroRedText"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/SmallBlack28Text"
+                android:text="@string/lb_profile_id_number" />
+
+            <EditText
+                android:id="@+id/edit_profile_idnumber"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@null"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRETUVWXYZ0123456789"
+                android:ellipsize="end"
+                android:inputType="textNoSuggestions"
+                android:maxLength="20"
+                tools:text="@string/id_number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_7"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:background="@color/colorBlack50" />
+
+            <TextView
+                android:id="@+id/lb_Invalid_Id_number"
+                style="@style/MicroRedText"
+                android:text="@string/Invalid_IdNumber"
+                android:visibility="invisible" />
+
+
+            <TextView
+                style="@style/SmallBlack28Text"
+                android:text="@string/lb_profile_address" />
+
+            <EditText
+                android:id="@+id/edit_profile_address"
+                style="@style/SmallBlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                tools:text="@string/address" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_7"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:background="@color/colorBlack50" />
+
+            <TextView
+                style="@style/MicroRedText"
+                android:visibility="invisible" />
+
+            <!--<TextView-->
+            <!--style="@style/SmallBlack28Text"-->
+            <!--android:layout_marginBottom="4dp"-->
+            <!--android:text="Social profile"-->
+            <!--android:textSize="14dp" />-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/margin_5"-->
+            <!--android:paddingBottom="@dimen/padding_15">-->
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageButton-->
+            <!--android:layout_width="36dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:id="@+id/ic_fb_active_edit"-->
+            <!--android:background="@drawable/bg_ic_login"-->
+            <!--android:visibility="invisible"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/ic_fb" />-->
+
+            <!--<ImageButton-->
+            <!--android:layout_width="36dp"-->
+            <!--android:id="@+id/ic_fb_inactive_edit"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:background="@drawable/bg_ic_login"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/ic_fbcopy"-->
+            <!--android:visibility="visible" />-->
+            <!--</FrameLayout>-->
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageButton-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="@dimen/margin_20"-->
+            <!--android:id="@+id/ic_zalo_active_edit"-->
+            <!--android:background="@drawable/bg_ic_login"-->
+            <!--android:visibility="invisible"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/ic_zalo" />-->
+
+            <!--<ImageButton-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="@dimen/margin_20"-->
+            <!--android:background="@drawable/bg_ic_login"-->
+            <!--android:id="@+id/ic_zalo_inactive_edit"-->
+            <!--android:visibility="visible"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/ic_zalocopy" />-->
+            <!--</FrameLayout>-->
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageButton-->
+            <!--android:layout_width="35dp"-->
+            <!--android:id="@+id/ic_google_active_edit"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="@dimen/margin_20"-->
+            <!--android:background="@drawable/bg_ic_login"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:visibility="invisible"-->
+            <!--android:src="@drawable/ic_gg" />-->
+
+            <!--<ImageButton-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:id="@+id/ic_google_inactive_edit"-->
+            <!--android:layout_marginLeft="@dimen/margin_20"-->
+            <!--android:background="@drawable/bg_ic_login"-->
+            <!--android:visibility="visible"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/ic_ggcopy" />-->
+            <!--</FrameLayout>-->
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:bottomLeftRadius="15dp" android:topLeftRadius="15dp"/>
+    <solid android:color="@color/colorItemPINextTime"></solid>
+    <padding android:top="@dimen/padding_5"  android:bottom="@dimen/padding_5" />
+</shape>

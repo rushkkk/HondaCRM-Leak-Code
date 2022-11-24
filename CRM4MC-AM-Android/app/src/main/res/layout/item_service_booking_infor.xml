@@ -1,0 +1,208 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_1"
+    android:layout_marginTop="@dimen/margin_20"
+    android:layout_marginEnd="@dimen/margin_1"
+    app:cardCornerRadius="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingTop="@dimen/padding_20"
+        android:paddingEnd="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_20">
+
+        <TextView
+            style="@style/Small2BlackBoldText"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_14"
+            android:text="@string/service_booking" />
+
+        <TextView
+            android:id="@+id/txtCanGetDataCurrentBooking"
+            style="@style/SmallBlackText"
+            android:drawableStart="@drawable/ic_cannot_get_data"
+            android:drawablePadding="@dimen/padding_5"
+            android:maxLines="1"
+            android:text="@string/can_not_get_data"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_current_booking_infor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGray30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/service_is_booking" />
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="Kiểm tran định kỳ (PI)"
+                    android:textAlignment="textEnd" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGray30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/service_booking_time"
+                    style="@style/SmallBlackText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/service_booking_time" />
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="2019/05/24 10:00-11:00"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGray30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/HVN_head" />
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="Honda Mỹ Đình"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGray30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/note"
+                    style="@style/SmallBlackText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/lb_booking_status" />
+
+                <TextView
+                    android:id="@+id/noteContent"
+                    style="@style/SmallBlackText"
+                    android:layout_width="0dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/note"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:text="Waiting dealer to confirm"
+                    android:textAlignment="textEnd"
+                    android:textColor="#F1790F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop ="@dimen/margin_11"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/padding_70"
+                android:paddingEnd="@dimen/padding_70"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    style="@style/MicroWhiteBoldText"
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="@dimen/margin_11"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/btn_cancel"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/btn_revise"
+                    style="@style/MicroWhiteBoldText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/revise"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

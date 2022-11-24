@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_10"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/llEditFollow"
+        layout="@layout/content_profile_edit"
+        android:visibility="gone"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listCar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#616060"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+
+</LinearLayout>

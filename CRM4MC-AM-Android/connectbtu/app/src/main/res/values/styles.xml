@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/lightGray</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="ThemeBlack" parent="AppTheme">
+        <item name="logo">@drawable/logo</item>
+        <item name="logoTitle">@drawable/logo_title_1</item>
+        <item name="logoLogin">@drawable/logo_login_1</item>
+
+        <item name="actionBarColor">@color/lightBlack</item>
+        <item name="actionBarDividerColor">@color/darkGray</item>
+        <item name="screenBg">@color/lightBlack</item>
+        <item name="splashScreenBg">@color/lightBlack</item>
+
+        <item name="dialogBg">@drawable/bg_popup_1</item>
+        <item name="dialogTitleTextColor">@color/white</item>
+        <item name="listItemBg">@color/darkGray</item>
+        <item name="listItemIconColor">@color/white</item>
+        <item name="editTextBg">@color/darkGray</item>
+        <item name="mainTextColor">@color/white</item>
+
+        <item name="loginBtnBg">@drawable/login_btn_selector_black</item>
+        <item name="bgLoginEditText">@drawable/bg_login_edittext_1</item>
+
+        <item name="inputScreenBg">@drawable/bg_input_screen_1</item>
+        <item name="inputEdittextBg">@drawable/bg_input_edittext_1</item>
+        <item name="icWarningTint">@color/redPure</item>
+        <item name="redBtnBg">@drawable/bg_red_btn_1</item>
+
+        <item name="theme1Selector">@drawable/theme1_selector_black</item>
+        <item name="theme2Selector">@drawable/theme2_selector_black</item>
+        <item name="theme3Selector">@drawable/theme3_selector_black</item>
+        <item name="theme4Selector">@drawable/theme4_selector_black</item>
+        <item name="themeTitleSelector">@drawable/theme_title_selector_black</item>
+        <item name="rawDataBtn">@drawable/raw_btn_selector_black</item>
+    </style>
+
+    <style name="ThemeRed" parent="AppTheme">
+        <item name="logo">@drawable/logo_2</item>
+        <item name="logoTitle">@drawable/logo_title_2</item>
+        <item name="logoLogin">@drawable/logo_login_2</item>
+
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="actionBarColor">@color/red</item>
+        <item name="actionBarDividerColor">@color/red</item>
+        <item name="screenBg">@color/white</item>
+        <item name="splashScreenBg">@color/red</item>
+
+        <item name="dialogBg">@drawable/bg_popup_2</item>
+        <item name="dialogTitleTextColor">@color/darkGray</item>
+        <item name="listItemBg">@color/lighterGray</item>
+        <item name="listItemIconColor">@color/red</item>
+        <item name="editTextBg">@color/lightGray</item>
+        <item name="mainTextColor">@color/darkGray</item>
+
+        <item name="loginBtnBg">@drawable/login_btn_selector_red</item>
+        <item name="bgLoginEditText">@drawable/bg_login_edittext_2</item>
+
+        <item name="inputScreenBg">@drawable/bg_input_screen_2</item>
+        <item name="inputEdittextBg">@drawable/bg_input_edittext_2</item>
+        <item name="icWarningTint">@color/red</item>
+        <item name="redBtnBg">@drawable/bg_red_btn_2</item>
+
+        <item name="theme1Selector">@drawable/theme1_selector_red</item>
+        <item name="theme2Selector">@drawable/theme2_selector_red</item>
+        <item name="theme3Selector">@drawable/theme3_selector_red</item>
+        <item name="theme4Selector">@drawable/theme4_selector_red</item>
+        <item name="themeTitleSelector">@drawable/theme_title_selector_red</item>
+        <item name="rawDataBtn">@drawable/raw_btn_selector_red</item>
+    </style>
+
+    <style name="ThemeBlackTexture" parent="ThemeBlack">
+        <item name="splashScreenBg">@drawable/bg_splash_1</item>
+        <item name="screenBg">@drawable/bg_1</item>
+    </style>
+
+    <style name="ThemeRedTexture" parent="ThemeRed">
+        <item name="splashScreenBg">@drawable/bg_splash_2</item>
+        <item name="screenBg">@drawable/bg_2</item>
+    </style>
+</resources>

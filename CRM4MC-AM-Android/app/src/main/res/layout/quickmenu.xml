@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="314dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorWhite"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/colorRedHeader"
+        app:itemTextColor="@color/colorBlack">
+
+        <LinearLayout
+            android:id="@+id/menuContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_231"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/menuList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/margin_19"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Micro2BlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_27"
+                android:gravity="center"
+                android:text="@string/followuson_name" />
+
+            <ImageButton
+                android:id="@+id/imgbtnIconFacebook"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="@dimen/margin_15"
+                android:background="@drawable/bg_imgbtn_fb"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imgbtnIconInstagram"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="@dimen/margin_15"
+                android:background="@drawable/bg_imgbtn_instagram" />
+
+            <ImageButton
+                android:id="@+id/imgbtnIconTwitter"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="@dimen/margin_15"
+                android:background="@drawable/bg_imgbtn_twitter" />
+
+            <ImageButton
+                android:id="@+id/imgbtnIconYoutube"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="@dimen/margin_15"
+                android:background="@drawable/bg_imgbtn_youtube" />
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_header"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/description_image"
+            android:focusable="true"
+            android:padding="@dimen/padding_16"
+            android:src="@drawable/ic_back_black" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Medium3BlackBoldText"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackground"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/lbs_sign_up_title" />
+
+
+        <TextView
+            android:id="@+id/tvDoneVehicle"
+            style="@style/SmallBlackText"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_16"
+            android:text="@string/lb_add_vehicle_done"
+            android:textColor="@drawable/text_background"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</FrameLayout>

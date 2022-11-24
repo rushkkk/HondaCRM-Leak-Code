@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <ImageView
+        android:id="@+id/img_vents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_events"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_below="@id/img_vents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:paddingStart="@dimen/padding_10"
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginEnd="@dimen/margin_15"
+        android:background="@drawable/bg_slide_events"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtTitleEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New model released!"
+            android:layout_marginTop="@dimen/margin_8"
+            style="@style/Small4WhiteBoldText"/>
+        <TextView
+            android:id="@+id/txtContentEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Before you wonder, it’s a significantly ..."
+            style="@style/Small2BlackText"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/padding_10">
+            <TextView
+                android:id="@+id/txtTimeEvent"
+                style="@style/Nano2BlackText"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_oclock_small"
+                android:drawablePadding="@dimen/margin_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/5/2019- 3/5/2019"/>
+            <TextView
+                android:id="@+id/txtAddressEvent"
+                style="@style/Nano2BlackText"
+                android:drawableStart="@drawable/ic_lacation_small"
+                android:layout_marginStart="@dimen/margin_5"
+                android:drawablePadding="@dimen/margin_2"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số Thái Hà, Đống Đa, Hà Nội "/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingRight="@dimen/padding_8"
+            android:paddingTop="@dimen/padding_20"
+            android:paddingBottom="@dimen/padding_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_titleServiceBooking"
+                style="@style/SmallBlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/lb_titleServiceBooking" />
+
+            <TextView
+                android:id="@+id/tv_service_booking_successfully"
+                style="@style/SmallBlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_20"
+                android:paddingEnd="@dimen/padding_26"
+                android:paddingStart="@dimen/padding_26"
+                android:paddingBottom="@dimen/padding_26"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_below="@+id/tv_titleServiceBooking"
+                android:text="@string/lb_service_booking_successfully"
+                />
+
+            <TextView
+                android:id="@+id/btn_ok"
+                style="@style/MediumWhileBoldText"
+                android:background="@drawable/button_background"
+                android:layout_centerHorizontal="true"
+                android:text="@string/btn_ok"
+                android:layout_below="@+id/tv_service_booking_successfully"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+</android.support.v7.widget.CardView>

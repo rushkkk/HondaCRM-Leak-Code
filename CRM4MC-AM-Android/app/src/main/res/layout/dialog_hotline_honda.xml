@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_20">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Honda Contact Details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_medium_3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot line: "
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hotline"
+            android:textColor="#4CAF50"
+            android:textSize="@dimen/font_size_small_3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_20"
+        android:paddingEnd="@dimen/padding_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            style="@style/MediumWhileBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_17"
+            android:layout_weight="1"
+            android:background="@drawable/button_gray_background"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_cancel" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            style="@style/MediumWhileBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_call"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>

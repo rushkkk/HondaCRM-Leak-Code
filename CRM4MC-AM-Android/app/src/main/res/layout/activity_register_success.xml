@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_50">
+
+        <TextView
+            style="@style/Small3BlackBoldText"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/txt_registerSuccess" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_40"
+            app:srcCompat="@drawable/ic_register_success" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:background="@drawable/selector_red_button"
+            android:paddingHorizontal="@dimen/padding_60"
+            android:text="@string/btn_next"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_size_small_4" />
+
+    </LinearLayout>
+
+</FrameLayout>

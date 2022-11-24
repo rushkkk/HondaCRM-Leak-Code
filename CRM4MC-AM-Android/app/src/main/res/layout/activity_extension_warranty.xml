@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/viewBenefits">
+
+    <include layout="@layout/tool_bar_back" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="WebViewLayout">
+        <android.support.v7.widget.CardView
+            android:id="@+id/view_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentBottom="true"
+            card_view:cardElevation="8dp"
+
+            card_view:cardBackgroundColor="@android:color/white">
+            <TextView
+                android:id="@+id/btnFindDealer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1"
+                android:background="@drawable/selector_red_button"
+                android:paddingStart="@dimen/padding_30"
+                android:paddingEnd="@dimen/padding_30"
+                android:text="@string/btn_find_dealer"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_size_small_4"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:paddingTop="@dimen/padding_5"
+                android:rotation="180"
+                android:paddingBottom="@dimen/padding_5"
+                android:layout_gravity="center"/>
+        </android.support.v7.widget.CardView>
+
+        <WebView
+            android:layout_above="@id/view_bottom"
+            android:id="@+id/wv_benefits_warranty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_null"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@drawable/background_capture"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_capture_rectange_not_coners"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/lb_capture_take_photo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small_4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="@color/black_38" />
+
+            <TextView
+                android:id="@+id/btnGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_capture_rectangle"
+                android:gravity="center"
+                android:padding="@dimen/padding_15"
+                android:text="@string/lb_capture_take_gallery"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small_4" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_background_capture"
+            android:gravity="center"
+            android:padding="@dimen/padding_15"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small_4"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</FrameLayout>

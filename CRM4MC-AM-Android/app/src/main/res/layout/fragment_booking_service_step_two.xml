@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_19"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_19">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_spinner_dealer">
+
+            <Spinner
+                android:id="@+id/sp_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_spinner_dealer">
+
+            <Spinner
+                android:id="@+id/sp_district"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/white"
+        android:id="@+id/rec_all_dealer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_8"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ln_top_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_19"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_19"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MicroBlack50Text"
+            android:text="3 đại lý gần nhất" />
+
+        <LinearLayout
+            android:id="@+id/ln_hide_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/txt_hide_dealer"
+                style="@style/MicroBlack50Text"
+                android:text="Hide dealer list" />
+
+            <ImageView
+                android:id="@+id/img_hide_dealer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:contentDescription="@string/description_image"
+                android:src="@drawable/ic_hide" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_18"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_18"
+            android:layout_marginBottom="@dimen/margin_180"
+            android:background="@drawable/bg_dealer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:paddingLeft="@dimen/padding_5"
+                android:paddingRight="@dimen/padding_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_top3_dealer">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_three_dealer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </ScrollView>
+        </LinearLayout>
+    </fragment>
+
+    <LinearLayout
+        android:id="@+id/location_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_27"
+            android:src="@drawable/ic_notthing_dealer" />
+
+        <TextView
+            style="@style/SmallBlackBoldText"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="@string/lb__enable_location" />
+
+        <TextView
+            style="@style/MicroBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_50"
+            android:layout_marginEnd="@dimen/margin_50"
+            android:gravity="center"
+            android:text="@string/lb__enable_location_good" />
+
+    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

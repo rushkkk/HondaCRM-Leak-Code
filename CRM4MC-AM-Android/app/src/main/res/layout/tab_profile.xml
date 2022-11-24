@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/tablayout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvTabInfo"
+            style="@style/TextViewTabProfile"
+            android:layout_marginStart="@dimen/margin_12"
+            android:paddingEnd="@dimen/margin_3"
+            android:paddingTop="@dimen/margin_3"
+            android:paddingBottom="@dimen/margin_3"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:gravity="start"
+            android:text="@string/tab_profile_info" />
+
+        <View
+            android:layout_width="0.25dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack30" />
+
+        <TextView
+            android:id="@+id/tvTabFollow"
+            style="@style/TextViewTabProfile"
+            android:paddingEnd="@dimen/margin_3"
+            android:paddingTop="@dimen/margin_3"
+            android:paddingBottom="@dimen/margin_3"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:text="@string/tab_profile_follow" />
+
+        <View
+            android:layout_width="0.25dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack30" />
+
+        <TextView
+            android:id="@+id/tvTabEvent"
+            style="@style/TextViewTabProfile"
+            android:paddingEnd="@dimen/margin_3"
+            android:paddingTop="@dimen/margin_3"
+            android:paddingBottom="@dimen/margin_3"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_12"
+            android:layout_weight="0.9"
+            android:gravity="end"
+            android:text="@string/tab_profile_event" />
+
+    </LinearLayout>
+</merge>

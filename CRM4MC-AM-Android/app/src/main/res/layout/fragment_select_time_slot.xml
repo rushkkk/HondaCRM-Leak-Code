@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:layout_marginBottom="@dimen/margin_10"
+            card_view:cardCornerRadius="@dimen/margin_8"
+            card_view:cardElevation="@dimen/margin_8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_14"
+                android:paddingRight="@dimen/padding_14"
+                android:paddingBottom="@dimen/margin_15">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_22"
+                    android:paddingBottom="@dimen/margin_11">
+
+                    <ImageView
+                        android:id="@+id/img_logo_honda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/margin_8"
+                        android:layout_marginBottom="@dimen/margin_7"
+                        android:contentDescription="@string/description_image"
+                        android:src="@drawable/ic_logo_honda" />
+
+                    <TextView
+                        android:id="@+id/tv_dealer_name"
+                        style="@style/Small3BlackBoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/img_logo_honda"
+                        android:text="Mỹ Đình" />
+
+                    <ImageView
+                        android:id="@+id/img_phone_dealer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginEnd="@dimen/margin_5"
+                        android:layout_toStartOf="@+id/tv_dealer_phone_number"
+                        android:contentDescription="@string/description_image"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/tv_dealer_phone_number"
+                        style="@style/MicroBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingTop="@dimen/padding_5"
+                        android:paddingBottom="@dimen/padding_10"
+                        android:gravity="end|bottom"
+                        android:text="0388230926" />
+
+                    <TextView
+                        android:id="@+id/lb_address"
+                        android:layout_below="@+id/img_logo_honda"
+                        style="@style/MicroBlack40Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Địa chỉ:"/>
+
+                    <TextView
+                        android:id="@+id/tv_dealer_address"
+                        style="@style/MicroBlack40Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/lb_address"
+                        android:layout_below="@+id/img_logo_honda"
+                        android:layout_marginStart="@dimen/margin_3"
+                        tools:text=" 2 Lê Đức Thọ, Mai Dịch" />
+
+                    <TextView
+                        android:id="@+id/tv_label_work_time"
+                        style="@style/MicroBlackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_dealer_address"
+                        android:layout_marginStart="@dimen/margin_3"
+                        android:layout_marginEnd="@dimen/margin_3"
+                        android:text="@string/lb_working_time" />
+
+                    <TextView
+                        android:id="@+id/tv_dealer_work_time"
+                        style="@style/MicroBlackText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_dealer_address"
+                        android:layout_toEndOf="@+id/tv_label_work_time"
+                        android:text="8:00-17:00" />
+
+                    <TextView
+                        android:id="@+id/tv_dealer_distance"
+                        style="@style/SmallBlackBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_label_work_time"
+                        android:layout_marginStart="@dimen/margin_3"
+                        android:layout_marginTop="@dimen/margin_6"
+                        android:text="0.8km" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:layout_below="@+id/tv_dealer_distance"
+                        android:layout_marginTop="@dimen/margin_11"
+                        android:background="@color/colorGray60" />
+                </RelativeLayout>
+
+                <vn.co.honda.hondacrm.ui.customview.CalendarView
+                    android:id="@+id/calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                </vn.co.honda.hondacrm.ui.customview.CalendarView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:layout_marginBottom="@dimen/margin_7"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_point_unavailable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_7"
+                        android:layout_marginEnd="@dimen/margin_8"
+                        android:contentDescription="@string/description_image"
+                        android:src="@drawable/ic_point_unavailable" />
+
+                    <TextView
+                        android:id="@+id/tv_label_unavailable"
+                        style="@style/SmallBlack40Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_60"
+                        android:layout_toEndOf="@+id/img_point_unavailable"
+                        android:text="@string/lb_unavailable" />
+
+                    <ImageView
+                        android:id="@+id/img_point_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_7"
+                        android:layout_marginEnd="@dimen/margin_8"
+                        android:layout_toEndOf="@+id/tv_label_unavailable"
+                        android:contentDescription="@string/description_image"
+                        android:src="@drawable/ic_point_available" />
+
+                    <TextView
+                        style="@style/SmallBlack40Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/img_point_available"
+                        android:text="@string/lb_available" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_label_select_time"
+                        style="@style/SmallBlackBoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_3"
+                        android:text="@string/lb_select_time_slot" />
+
+                    <TextView
+                        android:id="@+id/tv_date_selected"
+                        style="@style/SmallBlackBoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/gr_radio_am"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true">
+
+                        <RadioButton
+                            android:id="@+id/rd_time_slot_8h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlackGray"
+                            android:drawableEnd="@drawable/ic_point_unavailable"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:enabled="false"
+                            android:text="@string/lb_time_slot_8h"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/rd_time_slot_13h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlackGray"
+                            android:drawableEnd="@drawable/ic_point_unavailable"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:enabled="false"
+                            android:text="@string/lb_time_slot_9h"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/rd_time_slot_9h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlackGray"
+                            android:drawableEnd="@drawable/ic_point_unavailable"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:enabled="false"
+                            android:text="@string/lb_time_slot_10h"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/rd_time_slot_14h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlackGray"
+                            android:drawableEnd="@drawable/ic_point_unavailable"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:enabled="false"
+                            android:text="@string/lb_time_slot_11h"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/rd_time_slot_1h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlackGray"
+                            android:drawableEnd="@drawable/ic_point_unavailable"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:enabled="false"
+                            android:text="@string/lb_time_slot_11h"
+                            android:textColor="@color/black"
+                            android:visibility="gone"/>
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/gr_radio_pm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/margin_5"
+                        tools:ignore="RelativeOverlap">
+
+                        <RadioButton
+                            android:id="@+id/rd_time_slot_10h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlackGray"
+                            android:drawableEnd="@drawable/ic_point_unavailable"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:enabled="false"
+                            android:text="@string/lb_time_slot_13h"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/rd_time_slot_15h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlackGray"
+                            android:drawableEnd="@drawable/ic_point_unavailable"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:enabled="false"
+                            android:text="@string/lb_time_slot_14h"
+                            android:textColor="@color/black" />
+
+
+                        <RadioButton
+                            android:id="@+id/rd_time_slot_11h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlackGray"
+                            android:drawableEnd="@drawable/ic_point_unavailable"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:enabled="false"
+                            android:text="@string/lb_time_slot_15h"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/rd_time_slot_16h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBlackGray"
+                            android:drawableEnd="@drawable/ic_point_unavailable"
+                            android:drawablePadding="@dimen/padding_10"
+                            android:enabled="false"
+                            android:text="@string/lb_time_slot_16h"
+                            android:textColor="@color/black" />
+
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/img_time_slot_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_19"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_next_stepview" />
+
+        <TextView
+            style="@style/SmallBlackText"
+            android:layout_marginEnd="@dimen/margin_64"
+            android:layout_marginStart="@dimen/margin_64"
+            android:layout_marginBottom="@dimen/margin_7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/lb_note_time_slot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

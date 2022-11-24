@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_cart2"
+        android:actionLayout="@layout/cart_update_count"
+        android:icon="@drawable/ic_insert_drive_file_black_24dp"
+        android:title="@string/titleMenuNavigation"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_cart3"
+        android:actionLayout="@layout/cart_update_count"
+        android:icon="@drawable/ic_insert_drive_file_black_24dp"
+        android:title="@string/titleMenuNavigation2" />
+</menu>

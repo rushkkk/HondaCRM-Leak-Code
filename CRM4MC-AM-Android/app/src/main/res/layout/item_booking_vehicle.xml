@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_15">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_item_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_17"
+        android:layout_marginTop="@dimen/margin_6"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="@dimen/margin_6"
+        android:clickable="true"
+        app:cardCornerRadius="@dimen/item_vehicle_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10">
+
+            <ImageView
+                android:id="@+id/imgVehicle"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_vehicle_fake"
+                android:contentDescription="@string/description_image"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end">
+
+                    <ImageView
+                        android:id="@+id/imgConnect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_5"
+                        android:src="@drawable/ic_connect"
+                        android:visibility="invisible"
+                        android:contentDescription="@string/description_image"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtVehicleName"
+                    style="@style/MediumBlackBoldText"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txtLicensePlate"
+                        style="@style/SmallBlackText"
+                        android:layout_width="match_parent"
+                        android:layout_toStartOf="@+id/layout_vin"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        tools:text="29B1 - 123.45" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_vin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="VIN: "
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/txtVINCode"
+                            style="@style/SmallBlackText"
+                            android:ellipsize="start"
+                            android:singleLine="true"
+                            tools:text="***ABCDEFG" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:id="@+id/txtVehicleModel"
+                        style="@style/SmallBlackText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/layout_next_pm_date"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        tools:text="SH 150i" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_next_pm_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="start">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/next_pm"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtNextPMDate"
+                            style="@style/SmallBlackText"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            tools:text="08/2019    " />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

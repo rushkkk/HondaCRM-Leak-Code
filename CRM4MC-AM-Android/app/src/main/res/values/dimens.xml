@@ -1,0 +1,150 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--User Header stuff-->
+    <dimen name="header_text_size">26sp</dimen>
+    <dimen name="header_margin">5dp</dimen>
+    <dimen name="iv_cover_height">140dp</dimen>
+
+    <!--Listview rows stuff-->
+    <dimen name="lv_row_padding">10dp</dimen>
+    <dimen name="lv_row_text_size">20sp</dimen>
+    <dimen name="lv_row_icon_width">50dp</dimen>
+    <dimen name="lv_row_icon_padding">5dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <dimen name="margin_normal">5dp</dimen>
+
+    <!--Define Text Size-->
+    <!--Micro   12 sp-->
+    <!--Small   14 sp-->
+    <!--Medium  18 sp-->
+    <!--Large   22 sp-->
+    <!--Big Large   30 sp-->
+    <dimen name="font_size_nano9">9sp</dimen>
+    <dimen name="font_size_nano">10sp</dimen>
+    <dimen name="font_size_nano_2">11sp</dimen>
+    <dimen name="font_size_micro">12sp</dimen>
+    <dimen name="font_size_micro_2">13sp</dimen>
+    <dimen name="font_size_small">14sp</dimen>
+    <dimen name="font_size_small_2">15sp</dimen>
+    <dimen name="font_size_small_3">16sp</dimen>
+    <dimen name="font_size_small_4">17sp</dimen>
+    <dimen name="font_size_medium">18sp</dimen>
+    <dimen name="font_size_medium_2">19sp</dimen>
+    <dimen name="font_size_medium_3">20sp</dimen>
+    <dimen name="font_size_medium_4">21sp</dimen>
+    <dimen name="font_size_large">22sp</dimen>
+    <dimen name="font_size_large_2">23sp</dimen>
+    <dimen name="font_size_large_3">24sp</dimen>
+    <dimen name="font_size_large_4">25sp</dimen>
+    <dimen name="font_size_large_5">26sp</dimen>
+    <dimen name="font_size_large_6">27sp</dimen>
+    <dimen name="font_size_big_large">30sp</dimen>
+    <dimen name="font_size_big_large_2">31sp</dimen>
+    <dimen name="font_size_big_large_3">32sp</dimen>
+    <dimen name="font_size_big_large_4">33sp</dimen>
+    <dimen name="font_size_big_large_5">34sp</dimen>
+
+    <!--Define Margin/Padding Size-->
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_17">17dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_19">19dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_23">23dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_34">34dp</dimen>
+
+
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_14">14dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_18">18dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_22">22dp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="padding_26">26dp</dimen>
+    <dimen name="padding_28">28dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+
+    <!--Define radius bounder-->
+    <dimen name="card_home_radius">10dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="padding_45">45dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+
+    <!--Define radius bounder-->
+    <dimen name="item_vehicle_radius">15dp</dimen>
+    <dimen name="edit_text_radius">30dp</dimen>
+    <dimen name="area_text_radius">15dp</dimen>
+    <dimen name="button_radius">30dp</dimen>
+
+
+    <!--Card elavation-->
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="margin_27">27dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="margin_37">37dp</dimen>
+    <dimen name="margin_29">29dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="margin_275">275dp</dimen>
+    <dimen name="margin_165">165dp</dimen>
+    <dimen name="margin_231">231dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="padding_70">70dp</dimen>
+    <dimen name="padding_60">60dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+
+    <dimen name="dialog_radius">15dp</dimen>
+
+    <dimen name="padding_40">40dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="padding_17">17dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_64">64dp</dimen>
+    <dimen name="padding_9">9dp</dimen>
+    <dimen name="margin_39">39dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_63">63</dimen>
+    <dimen name="margin_180">180dp</dimen>
+    <dimen name="margin_38">38dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="padding_19">19dp</dimen>
+    <dimen name="margin_28">28dp</dimen>
+</resources>

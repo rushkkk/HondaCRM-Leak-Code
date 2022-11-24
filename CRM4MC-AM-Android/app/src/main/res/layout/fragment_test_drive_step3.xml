@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_19"
+        android:paddingRight="@dimen/padding_19">
+
+        <TextView
+            style="@style/SmallBlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/lb_tittle_step_2" />
+
+        <TextView
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:text="@string/lb_name_step_2" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingStart="@dimen/padding_5"
+            android:background="@drawable/bg_spiner_booking_service"
+
+            >
+
+            <EditText
+                android:id="@+id/spn_selecte_type_service"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                style="@style/SmallBlack56Text"
+                tools:text="nguyen van a"
+                android:background="@drawable/bg_null"
+
+                />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin_13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="82dp"
+                android:id="@+id/edit_age_view"
+                android:layout_alignParentStart="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_age_step_2" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:paddingStart="@dimen/padding_5"
+                    android:background="@drawable/bg_spiner_booking_service"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/edit_age_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        style="@style/SmallBlack56Text"
+                        tools:text="18"
+                        android:background="@drawable/bg_null"
+
+                        />
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="82dp"
+                android:layout_marginLeft="@dimen/margin_18"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_gender_view"
+                android:layout_toRightOf="@+id/edit_age_view"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_gender_step_2" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:paddingStart="@dimen/padding_5"
+
+                    android:background="@drawable/bg_spiner_booking_service"
+
+                    >
+                    <Spinner
+                        android:id="@+id/edit_gender_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+
+
+                        />
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SmallBlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lb_phone_step_2" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/bg_spiner_booking_service"
+                    android:paddingStart="@dimen/padding_5"
+                    >
+
+                    <EditText
+                        android:id="@+id/edit_phone_test"
+                        android:layout_width="match_parent"
+                        style="@style/SmallBlack56Text"
+                        tools:text="0964835342"
+                        android:layout_height="28dp"
+                        android:background="@drawable/bg_null"
+
+                        />
+                </FrameLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_13"
+            android:text="@string/lb_address" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/bg_spiner_booking_service"
+            android:paddingStart="@dimen/padding_5"
+            >
+
+            <EditText
+                android:id="@+id/edit_address_test"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@drawable/bg_null"
+                style="@style/SmallBlackText"
+                tools:text="hòa khanh city,liên chiêu da nang"
+
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/margin_25"
+        >
+
+        <ImageView
+            android:id="@+id/btnBackStep5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/margin_19"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_next_test_drive" />
+        <TextView
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_step_2" />
+
+        <ImageView
+            android:id="@+id/btnNextStep5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin_19"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_next_stepview" />
+    </FrameLayout>
+</RelativeLayout>
+
+

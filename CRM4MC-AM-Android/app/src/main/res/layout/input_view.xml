@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include-->
+        <!--android:id="@+id/toolbar"-->
+        <!--layout="@layout/toolbar_back"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?android:attr/actionBarSize" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/toolbar">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/enter_username"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="?attr/mainTextColor"-->
+            <!--android:textSize="@dimen/text_size_title_scan" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/edtInput"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_margin="@dimen/margin_vehicle_button"-->
+            <!--android:paddingStart="@dimen/padding_edit_text"-->
+            <!--android:paddingEnd="@dimen/padding_edit_text"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="?attr/inputEdittextBg">-->
+
+            <!--<requestFocus />-->
+        <!--</EditText>-->
+
+        <!--<Button-->
+            <!--android:enabled="false"-->
+            <!--android:id="@+id/submit"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="@dimen/text_size_button_dialog"-->
+            <!--android:paddingLeft="@dimen/margin_item_status"-->
+            <!--android:paddingRight="@dimen/margin_item_status"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:background="@drawable/dialog_btn_selector"-->
+            <!--android:text="@string/submit" />-->
+    <!--</LinearLayout>-->
+</android.support.constraint.ConstraintLayout>

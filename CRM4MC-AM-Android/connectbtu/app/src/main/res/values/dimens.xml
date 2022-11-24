@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_dialog">10dp</dimen>
+    <dimen name="min_width_button_dialog">120dp</dimen>
+    <dimen name="text_size_title_dialog">20sp</dimen>
+    <dimen name="text_size_title_scan">15sp</dimen>
+    <dimen name="padding_icon_input_login">10dp</dimen>
+    <dimen name="padding_button_login">7dp</dimen>
+    <dimen name="padding_layout_login">50dp</dimen>
+    <dimen name="margin_vehicle_button">30dp</dimen>
+    <dimen name="text_size_scan_button">25sp</dimen>
+    <dimen name="padding_edit_text">5dp</dimen>
+    <dimen name="text_size_title_not_found_bluetooth">18sp</dimen>
+    <dimen name="text_size_message_not_found_bluetooth">14sp</dimen>
+    <dimen name="size_warning">60dp</dimen>
+    <dimen name="height_item_status">60dp</dimen>
+    <dimen name="height_line_white">1dp</dimen>
+    <dimen name="height_line_list">0.2dp</dimen>
+    <dimen name="margin_top_message_not_found_ble">8dp</dimen>
+    <dimen name="height_item_device">60dp</dimen>
+    // define dimen for sw360dp (use run auto gen dimen support muti screen)
+    // dimen for dialog
+    <dimen name="width_dialog">350dp</dimen>
+    <dimen name="height_dialog">300dp</dimen>
+    <dimen name="margin_left_dialog">15dp</dimen>
+    <dimen name="padding_dialog_left">40dp</dimen>
+    <dimen name="padding_dialog_right">60dp</dimen>
+    <dimen name="text_size_message_dialog">17sp</dimen>
+    <dimen name="button_width_size_dialog">100sp</dimen>
+    <dimen name="button_height_size_dialog">45sp</dimen>
+    <dimen name="margin_button_dialog">10sp</dimen>
+    <dimen name="margin_top_button_dialog">30sp</dimen>
+    <dimen name="text_size_button_dialog">17sp</dimen>
+    <dimen name="min_width_dialog">300dp</dimen>
+    <dimen name="margin_item_status">20dp</dimen>
+    <dimen name="select_theme_title">14sp</dimen>
+    <dimen name="select_theme_margin">5dp</dimen>
+    <dimen name="theme_item_text_size">11sp</dimen>
+
+    // dimen for tool bar
+    <dimen name="text_size_tool_bar">12sp</dimen>
+    <dimen name="padding_button_unregister">5dp</dimen>
+    <dimen name="padding_button_back">20dp</dimen>
+</resources>

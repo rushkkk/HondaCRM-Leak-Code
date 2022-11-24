@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_header"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorRedHeader"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/description_image"
+            android:padding="@dimen/padding_16"
+            app:srcCompat="@drawable/ic_back_white" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/LargeWhiteText"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/lbs_sign_up_title" />
+
+        <LinearLayout
+            android:id="@+id/llEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_16"
+            android:paddingTop="10dp"
+            android:paddingEnd="@dimen/padding_16"
+            android:paddingBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:background="@null"
+                android:contentDescription="@string/description_image"
+                app:srcCompat="@drawable/ic_profile_edit" />
+
+            <TextView
+                android:id="@+id/tvEdit"
+                style="@style/SmallWhiteText"
+                android:text="@string/lb_profile_edit" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDone"
+            style="@style/SmallWhiteText"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/padding_10"
+            android:text="@string/lb_profile_done"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</FrameLayout>

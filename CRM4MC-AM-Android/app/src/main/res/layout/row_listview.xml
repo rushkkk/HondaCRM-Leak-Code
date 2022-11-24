@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_recyclerview"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_15"
+        android:paddingBottom="@dimen/padding_15">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_21"
+            android:layout_marginRight="@dimen/margin_25"
+            tools:src="@drawable/ic_support"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tvItemName"
+            style="@style/Small3BlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="@string/support_name"
+            android:textColor="@drawable/selector_menu_text_item" />
+    </LinearLayout>
+
+
+</LinearLayout>

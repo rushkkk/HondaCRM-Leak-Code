@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/line5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_11"
+    android:layout_marginTop="@dimen/margin_11"
+    android:layout_marginRight="@dimen/margin_11"
+    android:background="@drawable/shape_item_car"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/padding_12"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_2">
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="6dp"
+            android:layout_width="127dp"
+            android:layout_height="78dp"
+            android:id="@+id/id_image_oto"
+            android:layout_marginTop="@dimen/margin_10"
+            android:elevation="10dp">
+            <ImageView
+                android:id="@+id/imageCarProfileTab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:contentDescription="@string/description_image"
+                app:srcCompat="@mipmap/fake_image_car_tabfollow" />
+
+        </android.support.v7.widget.CardView>
+
+        <CheckBox
+            android:id="@+id/brand_select"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/margin_3"
+            android:layout_marginRight="@dimen/margin_8"
+            android:button="@drawable/checkbox_register"
+            tools:ignore="RtlHardcoded" />
+        <LinearLayout
+            android:id="@+id/textRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_toRightOf="@+id/id_image_oto"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/textnamecar"
+                style="@style/SmallBlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="@string/textCar"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textpricelabel"
+                    style="@style/SmallBrowText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_price"
+                    tools:ignore="NestedWeights,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/textprice"
+                    style="@style/SmallBlackText"
+                    android:layout_marginLeft="@dimen/margin_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

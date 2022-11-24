@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_connected"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:descendantFocusability="blocksDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="@dimen/padding_18"
+            android:paddingRight="@dimen/padding_18">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/layout_connected_tittle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/sw_connected_vehicle_detail_slide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ToggleSwitchTheme" />
+
+                    <TextView
+                        style="@style/MediumBlackText"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_3"
+                        android:layout_marginRight="@dimen/margin_3"
+                        android:text="@string/defaults" />
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_connected_tittle">
+
+                <include
+                    android:id="@+id/layout_connected_top"
+                    layout="@layout/item_connected_vehicle_detail_top" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/testtt"
+                layout="@layout/layout_connected_detail_option_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/ll_test" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_connected_vehicle_detail_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvc_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18.5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="18.5dp"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

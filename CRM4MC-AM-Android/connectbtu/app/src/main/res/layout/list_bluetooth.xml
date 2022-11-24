@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/screenBg">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <ImageView
+        android:id="@+id/imv_warning"
+        android:layout_width="@dimen/size_warning"
+        android:layout_height="@dimen/size_warning"
+        android:src="@drawable/ic_warning"
+        android:tint="?attr/icWarningTint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top" />
+
+    <TextView
+        android:id="@+id/txt_title_devices_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_not_found_bluetooth"
+        android:textColor="?attr/mainTextColor"
+        android:textSize="@dimen/text_size_title_not_found_bluetooth"
+        app:layout_constraintBottom_toTopOf="@id/txt_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imv_warning" />
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_message_not_found_ble"
+        android:gravity="center"
+        android:text="@string/message_not_found_bluetooth"
+        android:textAllCaps="false"
+        android:textColor="@color/lightGray"
+        android:textSize="@dimen/text_size_message_not_found_bluetooth"
+        app:layout_constraintEnd_toEndOf="@+id/txt_title_devices_list"
+        app:layout_constraintStart_toStartOf="@id/txt_title_devices_list"
+        app:layout_constraintTop_toBottomOf="@id/txt_title_devices_list" />
+
+    <RelativeLayout
+        android:id="@+id/relativeListDevice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/background_list_item"
+        android:layout_marginTop="@dimen/margin_vehicle_button"
+        android:layout_marginBottom="@dimen/margin_vehicle_button"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/txt_title_devices_list">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcvDevices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+</android.support.constraint.ConstraintLayout>

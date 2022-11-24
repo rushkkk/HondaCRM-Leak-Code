@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_login_btn_inactive" android:state_active="false" android:state_enabled="false" />
+    <item android:drawable="@drawable/bg_login_btn_1" android:state_enabled="true" />
+</selector>

@@ -1,0 +1,178 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+
+ext {
+    // core
+    androidSupportVersion = '28.0.0'
+    androidConstraintLayoutVersion = '1.1.3'
+    // network
+    retrofitVersion = '2.3.0'
+    loggingInterceptorVersion = '3.8.1'
+    // dagger 2
+    daggerVersion = '2.15'
+    // rx
+    rxJavaVersion = '1.1.5'
+    rxAndroidVersion = '1.2.1'
+    // images
+    glideVersion = '3.8.0'
+    // logger
+    loggerVersion = '1.15'
+    // lombok
+    lombokVersion = '1.18.8'
+    // javax
+    javaxAnnotationVersion = '1.0'
+
+    javaxInjectVersion = '1'
+    // circle image
+    circleImageVersion = '2.1.0'
+    // circle indicator
+    circleIndicatorVersion = '1.2.2'
+    // social network
+    faceBookSdkVersion = '5.0.3'
+    zaloSdkVersion = '2.4.2501.1'
+    // image load
+    picassoVersion = '2.5.0'
+    // otto event bus
+    ottoEventVersion = '1.3.8'
+    // google play service
+    playSeriveAuthenVersion = '16.0.1'
+    // photo view
+    photoViewVersion = '2.1.4'
+    //google map
+    googleMapVersion = '16.0.0'
+    //firebase
+    firebaseVersion = '16.0.9'
+}
+
+def versionMajor = 0
+def versionMinor = 1
+def versionPatch = 26
+def minSdk = 21
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "vn.co.honda.hondacrm"
+        minSdkVersion minSdk
+        targetSdkVersion 28
+        versionCode minSdk * 10000000 + versionMajor * 10000 + versionMinor * 100 + versionPatch
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "https://maven.google.com"
+    }
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support.constraint:constraint-layout:$project.androidConstraintLayoutVersion"
+    implementation "com.android.support:support-annotations:$project.androidSupportVersion"
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    // core
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "com.android.support:appcompat-v7:$project.androidSupportVersion"
+    implementation "com.android.support:support-v4:$project.androidSupportVersion"
+    implementation "com.android.support:design:$project.androidSupportVersion"
+    implementation "com.android.support:recyclerview-v7:$project.androidSupportVersion"
+    implementation "com.android.support:cardview-v7:$project.androidSupportVersion"
+    implementation "com.android.support.constraint:constraint-layout:$project.androidConstraintLayoutVersion"
+    // network
+    implementation "com.squareup.retrofit2:retrofit:$project.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$project.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$project.retrofitVersion"
+    implementation("com.squareup.retrofit2:converter-simplexml:$project.retrofitVersion") {
+        exclude group: 'xpp3', module: 'xpp3'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+    }
+    implementation "com.squareup.okhttp3:logging-interceptor:$project.loggingInterceptorVersion"
+    // dagger 2
+    implementation "com.google.dagger:dagger:$project.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$project.daggerVersion"
+    implementation "com.google.dagger:dagger-android:$project.daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$project.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$project.daggerVersion"
+    // reactive
+    implementation "io.reactivex:rxjava:$project.rxJavaVersion"
+    implementation "io.reactivex:rxandroid:$project.rxAndroidVersion"
+    // images
+    implementation "com.github.bumptech.glide:glide:$project.glideVersion"
+    // logger
+    implementation "com.orhanobut:logger:$project.loggerVersion"
+    // lombok
+    implementation "org.projectlombok:lombok:$project.lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$project.lombokVersion"
+    // butterknife
+    implementation "com.jakewharton:butterknife:$butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$project.butterknifeVersion"
+    implementation group: 'me.tatarka', name: 'gradle-retrolambda', version: '3.7.1'
+
+    implementation "de.hdodenhof:circleimageview:$project.circleImageVersion"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation "me.relex:circleindicator:$project.circleIndicatorVersion"
+
+    // social network
+    implementation "com.facebook.android:facebook-login:$project.faceBookSdkVersion"
+    implementation "com.zing.zalo.zalosdk:core:$project.zaloSdkVersion"
+    implementation "com.zing.zalo.zalosdk:auth:$project.zaloSdkVersion"
+    implementation "com.zing.zalo.zalosdk:authext:$project.zaloSdkVersion"
+    implementation "com.zing.zalo.zalosdk:openapi:$project.zaloSdkVersion"
+
+    //seekbar
+    implementation project(':indicatorseekbar')
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation project(':scrollingpagerindicator')
+
+//    //UT frameworks dependencies
+    testImplementation "org.mockito:mockito-core:1.10.19"
+    testImplementation 'org.powermock:powermock:1.6.2'
+    testImplementation 'org.powermock:powermock-module-junit4:1.6.2'
+    testImplementation 'org.powermock:powermock-api-mockito:1.6.2'
+    testImplementation 'org.objenesis:objenesis:2.1'
+
+    // load image picasso
+    implementation "com.squareup.picasso:picasso:$project.picassoVersion"
+    // otto event bus
+    implementation "com.squareup:otto:$project.ottoEventVersion"
+    // google play service
+    implementation "com.google.android.gms:play-services-auth:$project.playSeriveAuthenVersion"
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+    //DOT INTAGRAM
+    implementation 'com.github.hrskrs:InstaDotView:1.1'
+    implementation "com.github.chrisbanes:PhotoView:$project.photoViewVersion"
+    implementation "com.google.android.gms:play-services-maps:$project.googleMapVersion"
+// room db
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation "com.google.android.gms:play-services-location:$project.googleMapVersion"
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.github.hrskrs:InstaDotView:1.1'
+}
+apply plugin: 'com.google.gms.google-services'

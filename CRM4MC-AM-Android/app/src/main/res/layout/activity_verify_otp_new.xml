@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <include layout="@layout/tool_bar_back" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/padding_20">
+
+            <TextView
+                android:id="@+id/tv_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/tv_instruction_text_otp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_remaining_time_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="11dp"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edt_input_otp"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:autofillHints="@string/hint_otp_enter"
+                android:background="@drawable/shape_text_input"
+                android:gravity="center"
+                android:hint="@string/hint_otp_enter"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/colorGrey"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/btn_verify"
+                android:layout_width="156dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="38dp"
+                android:background="@drawable/selector_red_button"
+                android:text="@string/btn_verify"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:text="@string/tv_resend_text"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/tv_resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:text="@string/tv_resend_text_1"
+            android:textColor="@color/black"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

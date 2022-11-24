@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_20">
+
+    <TextView
+        android:id="@+id/txt_title_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Honda Contact Details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_small_2" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_30"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingEnd="@dimen/padding_10"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            style="@style/MediumWhileBoldText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_cancel"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            style="@style/MediumWhileBoldText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_weight="1"
+            android:background="@drawable/bg_red"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_ok"
+            android:textColor="@color/colorWhite"
+            android:textSize="13dp" />
+    </LinearLayout>
+</LinearLayout>

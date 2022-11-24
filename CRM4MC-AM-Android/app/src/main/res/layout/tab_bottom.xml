@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tvTabProducts"
+            style="@style/TextViewTabHome"
+            android:drawableTop="@drawable/selector_tab_products"
+            android:text="@string/tab_bottom_product" />
+
+        <TextView
+            android:id="@+id/tvTabVehicles"
+            style="@style/TextViewTabHome"
+            android:drawableTop="@drawable/selector_tab_vehicles"
+            android:text="@string/tab_bottom_vehicle" />
+
+        <TextView
+            android:id="@+id/tvTabHome"
+            style="@style/TextViewTabHome"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:text="@string/tab_bottom_home" />
+
+        <TextView
+            android:id="@+id/tvTabDealers"
+            style="@style/TextViewTabHome"
+            android:drawableTop="@drawable/selector_tab_dealers"
+            android:text="@string/tab_bottom_dealer" />
+
+        <TextView
+            android:id="@+id/tvTabConnect"
+            style="@style/TextViewTabHome"
+            android:drawableTop="@drawable/selector_tab_connects"
+            android:text="@string/tab_bottom_connect" />
+    </LinearLayout>
+</merge>

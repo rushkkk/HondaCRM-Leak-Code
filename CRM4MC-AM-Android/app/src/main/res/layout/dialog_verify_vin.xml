@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_dialog"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_20">
+
+        <TextView
+            android:id="@+id/txt_dia"
+            style="@style/MediumBlackText"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:gravity="center"
+            android:text="@string/tv_request_dialog" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_20"
+            android:paddingEnd="@dimen/padding_20"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                style="@style/MediumWhileBoldText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_17"
+                android:layout_weight="1"
+                android:background="@drawable/button_gray_background"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:text="@string/btn_cancel" />
+
+            <TextView
+                android:id="@+id/btn_ok"
+                style="@style/MediumWhileBoldText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:text="@string/btn_request_dialog"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

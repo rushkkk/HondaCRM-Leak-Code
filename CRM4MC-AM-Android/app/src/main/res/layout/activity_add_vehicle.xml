@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_20"
+        android:paddingRight="@dimen/padding_20">
+
+        <TextView
+            android:id="@+id/txtIntroduce"
+            style="@style/MediumBlackBoldText"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:gravity="center"
+            android:text="@string/add_vehicle_manual_tittle"
+            android:visibility="visible" />
+
+
+        <RadioGroup
+            android:id="@+id/gr_radio_select_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioAutomobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlackGray"
+                android:checked="true"
+                android:text="@string/automobile" />
+
+            <RadioButton
+                android:id="@+id/radioMotocycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_50"
+                android:buttonTint="@color/colorBlackGray"
+                android:text="@string/motorcycle" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_10"
+                app:srcCompat="@drawable/nfc"
+                android:visibility="invisible" />
+
+
+            <EditText
+                android:id="@+id/editVINNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:maxEms="17"
+                android:maxLength="17"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_toStartOf="@+id/imgNFC"
+                android:background="@drawable/textview_disable"
+                android:digits="@string/digits_disable_emoji"
+           />
+
+            <ImageView
+                android:background="@drawable/common_highlight_background"
+                android:id="@+id/imgNFC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_toStartOf="@+id/img_add_vin_tutorial"
+                android:src="@drawable/ic_nfc"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_add_vin_tutorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_10"
+                android:background="@drawable/common_highlight_background"
+                app:srcCompat="@drawable/ic_question" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtErrorVIN"
+            style="@style/SmallRedText"
+            android:visibility="invisible"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:text="@string/VIN_incorrect"/>
+
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/txtAddVIN"
+            style="@style/MediumWhileBoldText"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_20"
+            android:paddingEnd="@dimen/padding_20"
+            android:text="@string/add_vehicle" />
+    </LinearLayout>
+</FrameLayout>

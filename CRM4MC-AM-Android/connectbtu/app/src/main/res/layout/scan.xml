@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/screenBg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|bottom">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size_title_scan"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_dialog"
+                android:textColor="@color/gray"
+                android:text="@string/you_have_not_registered_any_vehicle" />
+
+            <LinearLayout
+                android:id="@+id/scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_dialog"
+                android:gravity="center"
+                android:background="?attr/redBtnBg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_scan"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scan_for_vehicle"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_scan_button"
+                    android:background="@null"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

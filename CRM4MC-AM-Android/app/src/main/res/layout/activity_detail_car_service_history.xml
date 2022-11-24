@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.vehicles.DetailCarServiceHistoryActivity">
+
+    <include layout="@layout/tool_bar_service_back" />
+
+    <RelativeLayout
+        android:id="@+id/relative_info_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_12">
+
+
+        <ImageView
+            android:id="@+id/img_fix"
+            android:layout_width="@dimen/margin_30"
+            android:layout_height="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_5"
+            android:src="@mipmap/ic_fix" />
+
+
+        <TextView
+            android:id="@+id/tv_maintain"
+            style="@style/Small2BlackBoldText"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@+id/img_fix"
+            tools:text="@string/tv_fixNormal" />
+
+        <TextView
+            android:id="@+id/tv_agency"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_maintain"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@+id/img_fix"
+            android:text="@string/HVN_head" />
+
+        <TextView
+            android:id="@+id/tv_numAgency"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_maintain"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toStartOf="@+id/tv_ODO"
+            android:layout_toEndOf="@+id/tv_agency"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="123 Ba Dinh" />
+
+        <TextView
+            android:id="@+id/tv_arrival"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_agency"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@+id/img_fix"
+            android:text="@string/tv_arrival" />
+
+        <TextView
+            android:id="@+id/tv_arrivalTime"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_agency"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/tv_arrival"
+            tools:text="10:15 AM" />
+
+        <TextView
+            android:id="@+id/tv_numDate"
+            style="@style/Small2GrayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:text="30-Apr-2019" />
+
+        <TextView
+            android:id="@+id/tv_ODO"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_numDate"
+            android:layout_toLeftOf="@+id/tv_numKm"
+            android:text="@string/tv_ODO" />
+
+        <TextView
+            android:id="@+id/tv_numKm"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_numDate"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            tools:text="96.969 km" />
+
+        <TextView
+            android:id="@+id/tv_leave"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ODO"
+            android:layout_toLeftOf="@+id/tv_leaveTime"
+            android:text="@string/tv_leave" />
+
+        <TextView
+            android:id="@+id/tv_leaveTime"
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ODO"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            tools:text="11:00 AM" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_12"
+        android:background="@drawable/border_table" />
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20">
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:progressTint="@color/colorRed"
+            android:stepSize="0.1"
+            android:visibility="visible"
+            tools:rating="4.0" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            style="@style/Small2BlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:layout_alignParentRight="true"
+            android:text="@string/tv_ratingService" />
+
+        <TextView
+            android:id="@+id/btn_book_service_now_detail"
+            style="@style/Small2BlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/red_button"
+            android:padding="@dimen/padding_10"
+            android:text="@string/btn_bookService"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

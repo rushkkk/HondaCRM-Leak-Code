@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_profile_myinfor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="@dimen/padding_12"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/lb_profile_birthdate"
+            android:textColor="@color/colorBrow2"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtBirthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:text="22/05/1989"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/lb_profile_gender"
+            android:textColor="@color/colorBrow2"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtfill_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:text="Male"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/lb_profile_email"
+            android:textColor="@color/colorBrow2"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtEmailUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="HaFieuFong@gmail.com"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/lb_profile_job"
+            android:textColor="@color/colorBrow2"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtfill_Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:text="Design"
+            android:textColor="@color/colorBlack" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/lb_profile_id_number"
+            android:textColor="@color/colorBrow2"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtLoyalti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="12345678"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/lb_profile_address"
+            android:textColor="@color/colorBrow2"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="218 Đội cấn ,Ba Đình ,Hà Nội"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+</ScrollView>

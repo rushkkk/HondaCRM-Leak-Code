@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_spinner"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_14"
+        android:paddingRight="@dimen/padding_14">
+
+        <TextView
+            style="@style/SmallBlackBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/btn_select_test_drive" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/bg_spiner_booking_service"
+            android:paddingStart="@dimen/padding_5">
+
+            <Spinner
+                android:id="@+id/spn_selecte_type_service"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@+id/view_spinner"
+        android:layout_width="320dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="91dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_vehicle_test"
+        android:src="@drawable/img_test_oto"
+
+        />
+
+    <TextView
+        style="@style/Medium3BlackBoldText"
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_name_vehicle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_25"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_vehicle_test"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_25"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/btnBackStep5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/margin_19"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_next_test_drive" />
+        <TextView
+            style="@style/SmallBlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_step_2" />
+
+        <ImageView
+            android:id="@+id/btnNextStep5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin_19"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_next_stepview" />
+    </FrameLayout>
+</RelativeLayout>
+
+

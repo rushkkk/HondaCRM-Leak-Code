@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/tool_bar_back" />
+
+    <ScrollView
+        android:id="@+id/scrollRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_18"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SmallBlack30BoldText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="@string/lb_name" />
+
+            <EditText
+                android:id="@+id/edt_Name"
+                style="@style/EditTextRegister"
+                android:background="@drawable/border_edittext_register"
+                android:maxLines="1"
+                android:inputType="textNoSuggestions" />
+
+            <TextView
+                android:id="@+id/txtErrorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_micro"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/SmallBlack30BoldText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="@string/lb_phoneNumber" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/border_edittext_register"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:paddingBottom="@dimen/margin_7"
+                    android:text="@string/tv_phone_text_box"
+                    android:textColor="@color/colorGray2"
+                    android:textSize="@dimen/font_size_small_3" />
+
+                <EditText
+                    android:id="@+id/edt_Phone_Number"
+                    style="@style/EditTextRegister"
+                    android:background="@drawable/border_edittext_register"
+                    android:inputType="number"
+                    android:maxLength="32"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtErrorPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_micro"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/tv_Password"
+                style="@style/SmallBlack30BoldText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="@string/lb_passWord" />
+
+            <EditText
+                android:id="@+id/edt_PassWord"
+                style="@style/EditTextRegister"
+                android:background="@drawable/border_edittext_register"
+                android:inputType="text"
+                android:maxLength="64"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/txtErrorPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_micro"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_ConfirmPassword"
+                style="@style/SmallBlack30BoldText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="@string/lb_confirmPassWord" />
+
+            <EditText
+                android:id="@+id/edt_Confirm_PassWord"
+                style="@style/EditTextRegister"
+                android:background="@drawable/border_edittext_register"
+                android:inputType="text"
+                android:maxLength="64"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/txtErrorPassConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_micro"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/SmallBlack30BoldText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="@string/lb_gender" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/acGenders"
+                style="@style/EditTextRegister"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/border_edittext_register"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:dropDownHeight="wrap_content"
+                android:focusable="false"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/margin_7"
+                android:text="Male"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small_2">
+
+            </AutoCompleteTextView>
+
+            <TextView
+                style="@style/SmallBlack30BoldText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="@string/lb_dateOfBirth" />
+
+            <EditText
+                android:id="@+id/edt_DateOfBrth"
+                style="@style/EditTextRegister"
+                android:background="@drawable/border_edittext_register"
+                android:digits="0123456789/"
+                android:drawableRight="@mipmap/ic_profile_date_time"
+                android:focusable="false"
+                android:inputType="date"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/padding_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small_3" />
+
+            <TextView
+                android:id="@+id/txtErrorBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_micro"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_4"
+                    android:paddingBottom="@dimen/padding_4"
+                    android:paddingEnd="@dimen/padding_4"
+                    android:button="@drawable/checkbox_register"
+                    android:buttonTint="@color/black"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/tvAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:text="@string/lb_policy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_small"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_marginBottom="@dimen/margin_40"
+                android:background="@drawable/selector_red_button"
+                android:gravity="center"
+                android:paddingHorizontal="50dp"
+                android:text="Sign up"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

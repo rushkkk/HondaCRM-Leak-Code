@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" >
+    <solid android:color="@android:color/transparent"></solid>
+    <!--<padding android:top="@dimen/padding_10"  android:bottom="@dimen/padding_10" android:right="@dimen/padding_70" android:left="@dimen/padding_70"/>-->
+</shape>

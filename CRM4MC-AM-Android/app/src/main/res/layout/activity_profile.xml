@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/image_user_profile_default"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            app:srcCompat="@color/colorRedHeader"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/tool_bar_back_tranfer" />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frHeader">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image_user_profile_default"
+                    app:civ_border_color="@color/colorBorderImageProfile"
+                    app:civ_border_width="5dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_image_edit_profile"
+                    android:visibility="invisible"
+                    app:civ_border_color="@color/colorBorderImageProfile"
+                    app:civ_border_width="5dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/llInfoProfileDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_7"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tf_profile_username"
+                        style="@style/MediumWhiteBoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/nameUser" />
+
+                    <TextView
+                        android:id="@+id/tf_id_number"
+                        style="@style/MediumWhiteText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/phone" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llInfoProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_7"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/label_profile_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_35"
+                            android:layout_weight="2"
+                            android:text="Name"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/edit_profile_username"
+                            style="@style/MediumWhiteBoldText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_weight="3"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingRight="@dimen/margin_35"
+                            android:singleLine="true"
+                            android:text="@string/nameUser"
+                            tools:ignore="RtlCompat"
+                            android:maxLength="64" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:layout_marginLeft="@dimen/margin_35"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_35"
+                        android:background="#80FFFFFF">
+                    </View>
+                    <TextView
+                        android:id="@+id/lb_Invalid_UserName"
+                        style="@style/MicroWhiteText"
+                        android:layout_gravity="end"
+                        android:paddingRight="@dimen/margin_35"
+                        android:text="@string/Invalid_Username"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_35"
+                            android:layout_weight="2"
+                            android:text="Phone number"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/tf_phoneNumber"
+                            style="@style/MediumWhiteText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/label_profile_name"
+                            android:layout_weight="3"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:gravity="right"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingRight="@dimen/margin_35"
+                            android:text="@string/phone"
+                            tools:ignore="RtlCompat"
+                            android:maxLength="32"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:layout_marginLeft="@dimen/margin_35"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_35"
+                        android:background="#80ffff">
+
+                    </View>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:paddingBottom="@dimen/padding_15"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <vn.co.honda.hondacrm.ui.customview.tabs.TabProfile
+                            android:id="@+id/tabProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <vn.co.honda.hondacrm.ui.customview.ViewPagerNoSwipe
+                            android:id="@+id/viewpager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

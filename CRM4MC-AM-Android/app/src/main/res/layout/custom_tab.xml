@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/description_image"
+        tools:src="@drawable/ic_tab_vehicles_select" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/NanoBlack96Text"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@drawable/selector_custom_tab_home_text"
+        tools:text="Home" />
+</RelativeLayout>

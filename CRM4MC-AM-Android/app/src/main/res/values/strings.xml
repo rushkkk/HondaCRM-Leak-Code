@@ -1,0 +1,686 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">HonDaCRM</string>
+    <string name="news_app_bar_title">Новости</string>
+    <string name="news_no_content">К сожалению, никаких новостей не найдено.</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_image">image description</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Hide_dealer_list">Hide Dealer List</string>
+    <string name="Book_a_service">Book a Service</string>
+    <string name="working_time">Working Time: </string>
+
+    // tab bottom
+    <string name="tab_bottom_home">Home</string>
+    <string name="tab_bottom_product">Products</string>
+    <string name="tab_bottom_connect">Connected</string>
+    <string name="tab_bottom_vehicle">Vehicles</string>
+    <string name="tab_bottom_dealer">Dealers</string>
+
+    <!-- menu drawer !-->
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+
+    //tab profile
+    <string name="tab_profile_info">My Info</string>
+    <string name="tab_profile_follow">My Follow</string>
+    <string name="tab_profile_event">My Events</string>
+    <string name="Edit_User_Profile">Edit User Profile</string>
+    <string name="User_Profile">User Profile</string>
+    <string name="Profile_completeness">Profile completeness</string>
+
+
+    <string-array name="menu_list">
+        <item>F.A.Q</item>
+        <item>Tutorials</item>
+        <item>Privacy Policy</item>
+        <item>Terms &amp; Conditions</item>
+        <item>Change Language</item>
+        <item>Rate our app</item>
+        <item>Sign out</item>
+
+    </string-array>
+    <string-array name="list_time_expec">
+        <item>"8:00 - 9:00"</item>
+        <item>"9:00 - 10:00"</item>
+        <item>"10:00 - 11:00"</item>
+        <item>"11:00 - 12:00"</item>
+        <item>"13:00 - 14:00"</item>
+        <item>"14:00 - 15:00"</item>
+        <item>"15:00 - 16:00"</item>
+        <item>"16:00 - 17:00"</item>
+    </string-array>
+
+    <!-- Template rule define name string -->
+    <string name="msg_no_notes">No notes found!</string>
+    <string name="lb_new_note_title">New Note</string>
+    <string name="lb_edit_note_title">Edit Note</string>
+    <string name="hint_enter_note">Enter your note!</string>
+
+    <string name="lbs_sign_up_title">Sign up for Honda account</string>
+    <string name="lb_sign_up_maximum">You have reached maximum number of retries.</string>
+    <string name="msg_wrong_otp">Wrong OTP! Please try again</string>
+    <string name="msg_wrong_valid_otp">“OTP must contains 6 characters”.</string>
+    <string name="msg_wrong_otp_try_again">You have reached maximum number of retries.</string>
+    <string name="msg_wrong_otp_exceeded_maxium">Wrong OTP! You have exceeded maximum number of retries. Please request a new OTP.</string>
+    <string name="lb_try_again">Please try again the next day</string>
+
+
+    <!-- hieppt5 -->
+    <string name="title_forgot_password">Forgot password</string>
+    <string name="resend_text">Did not receive OTP?</string>
+    <string name="resend_text_2">Resend OTP</string>
+    <string name="lb_note_time_slot">Note. Đây là thời gian dự kiến đến làm dịch vụ. Thời gian sửa chữa sẽ phụ thuộc vào kết quả kiểm tra xe của cố vấn</string>
+    <string name="instruction_text">Please enter the mobile phone number you used to register your account. We will send an OTP to your registered mobile phone to let you change your password.</string>
+    <string name="phone_number_text">Phone number (*) </string>
+    <string name="phone_text_box">+84 </string>
+    <string name="text_next">Next </string>
+    <string name="instruction_text_otp">We are sending and OTP to validate your mobile phone number. Please enter OTP:</string>
+    <string name="time_remaining">Time remaining:</string>
+    <string name="hint_otp_enter">Enter OTP</string>
+    <string name="button_verify">Verify</string>
+    <string name="success_text">Thank you for validating your mobile phone!</string>
+    <string name="lb_please_enter">Please enter your new password</string>
+    <string name="lb_provide_info">Provide more information</string>
+    <string name="lb_working_time">Working time:</string>
+    <string name="lb_vehicle_picture">Tap to edit vehicle\'s picture</string>
+    <string name="change_success_text">You have successfully changed your password!</string>
+    <string name="change_password">Change password</string>
+    <string name="conform_password">CONFIRM PASSWORD (*)</string>
+    <string name="password">PASSWORD (*)</string>
+    <string name="lb_gallery">Gallery</string>
+    <string name="lb_camera">Camera</string>
+    <string name="lb_unavailable">Unavailable</string>
+    <string name="lb_available">Available</string>
+    <string name="lb_time_slot_8h">08:00 - 09:00</string>
+    <string name="lb_time_slot_9h">09:00 - 10:00</string>
+    <string name="lb_time_slot_10h">10:00 - 11:00</string>
+    <string name="lb_time_slot_11h">11:00 - 12:00</string>
+    <string name="lb_time_slot_13h">13:00 - 14:00</string>
+    <string name="lb_time_slot_14h">14:00 - 15:00</string>
+    <string name="lb_time_slot_15h">15:00 - 16:00</string>
+    <string name="lb_time_slot_16h">16:00 - 17:00</string>
+    <string name="lb_sunday">SUN</string>
+    <string name="lb_monday">MON</string>
+    <string name="lb_tuesday">TUS</string>
+    <string name="lb_wednesday">WED</string>
+    <string name="lb_thursday">THU</string>
+    <string name="lb_friday">FRI</string>
+    <string name="lb_saturday">SAT</string>
+    <string name="lb_select_vehicle">Select Vehicle</string>
+    <string name="lb_select_dealer">Select Dealer</string>
+    <string name="lb_time_slot">Select Time Slot</string>
+    <string name="lb_select_service">Select Service</string>
+    <string name="lb_submit_booking">Review Submit</string>
+    <string name="lb_select_time_slot">Please select time slot in</string>
+    <string name="lb_choose_action">Choose an action</string>
+    <string name="validate_phone">Please input your phone number!</string>
+    <string name="lb_step5_select_time">Selected Time</string>
+    <string name="lb_step5_type_service">Select Type of Service</string>
+    <string name="lb_step5_describe">Describe your request:</string>
+    <string name="lb_step5_finishing_time">Expected finishing time: </string>
+
+    <string-array name="tabs">
+        <item>Products</item>
+        <item>Vehicles</item>
+        <item>Home</item>
+        <item>Dealers</item>
+        <item>Connected</item>
+    </string-array>
+
+    <string name="header_sign_up_content">Sign up for Honda account</string>
+    <string name="label_name">Name (*)</string>
+    <string name="label_phone_number">Phone number (*)</string>
+    <string name="label_password">Password (*)</string>
+    <string name="label_confirm_password">Confirm password (*)</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_year_of_birth">Year of birth</string>
+    <string name="label_email">Email</string>
+    <string name="label_job">Job</string>
+    <string name="label_id_number">ID number</string>
+    <string name="label_address">Address</string>
+    <string name="button_sign_up">SIGN UP</string>
+    <string name="message_sending_otp">We are sending and OTP to validate your mobile phone number. Please enter the OTP:</string>
+    <string name="message_time_remaining">Time remaining: 2:23</string>
+    <string name="title_activity_policy">Policy</string>
+    <string name="policy_content">The Honda Vietnam Company (“HVN,” “we” or “our”) cares about your privacy and the security of your information.\n
+\n
+1. What Personal Information Do We Gather About You?\n
+\nWhen you use the NYT Services by, among other actions, ordering a subscription or other product, providing registration details, setting newsletter preferences, browsing our sites, completing a survey, entering a contest or otherwise interacting with our NYT Services, we gather personal information. Personal information is information that identifies you as an individual or relates to an identifiable individual. Several different types of personal information can be gathered when you interact with the NYT Services, depending on the type of product or service being used. Collection of personal information is necessary to delivering you the NYT Services or to enhance your customer experience.\n
+\nIf you disclose any personal information relating to other people to us or to our service providers in connection with the NYT Services, you represent that you have the authority to do so and to permit us to use the information in accordance with this Privacy Policy.\n
+\nWe and our service providers collect personal information in a variety of ways, including:</string>
+    <string name="lb_sending_otp">We are sending and OTP to validate your mobile phone number. Please enter the OTP:</string>
+    <string name="button_otp">VERIFY</string>
+    <string name="lb_not_receive_otp">Did not receive OTP?</string>
+    <string name="lb_resend_otp">Resend OTP</string>
+    <string name="lb_time_remaining">Time remaining:</string>
+
+    <!-- Profile -->
+
+    <!--validate-->
+    <string name="Invalid_email_address">“Email” has wrong format.</string>
+    <string name="Invalid_Birthday">“Date of birth” must not be in the future.</string>
+    <string name="Invalid_Username">“Name” is required.</string>
+    <string name="Invalid_IdNumber">“Id Number” has wrong format.</string>
+
+    <!--gender-->
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Other">Other</string>
+    <!--my infor edit text-->
+    <string name="birthdate">22/05/1989</string>
+    <string name="email">HaFieuFong@gmail.com</string>
+    <string name="job">Design</string>
+    <string name="id_number">0964871896</string>
+    <string name="address">218 Đội cấn ,Ba Đình ,Hà Nội</string>
+    <string name="nameUser">User Name</string>
+    <string name="phone">+(84) 964871895</string>
+    <string name="dialogOK">OK</string>
+
+    <!--item car-->
+    <string name="dialogTitle">Hello Dialog</string>
+    <string name="label_price">Price : </string>
+    <string name="textCar">HonDa</string>
+    <string name="price">999.999.999 VND</string>
+    <!--item event profile-->
+    <string name="titleEvent">Happy anniversary</string>
+    <string name="contentEvent">The Power of Dreams  manifests itself in ...</string>
+    <string name="addressVent">Số Thái Hà, Đống Đa, Hà Nội</string>
+    <string name="networkError">Connection problem.</string>
+    <!--my follow edit-->
+    <string name="labelDelete">Delete</string>
+
+    <!-- String Profile page -->
+    <string name="lb_profile_tab_infor_title">My Infor</string>
+    <string name="lb_profile_tab_follow_title">My Follow</string>
+    <string name="lb_profile_tab_event_title">My Events(4)</string>
+    <string name="lb_profile_birthdate">Date of birth</string>
+    <string name="lb_profile_gender">Gender</string>
+    <string name="lb_profile_email">Email</string>
+    <string name="lb_profile_job">Job</string>
+    <string name="lb_profile_id_number">ID number</string>
+    <string name="lb_profile_address">Address</string>
+    <string name="lb_profile_edit">Edit</string>
+    <!--error profile infor-->
+    <string name="lb_profile_birthdate_error">Birthday invalidate! </string>
+
+    <string name="fragment_vehicle_title">Please add your vehicles</string>
+    <string name="add_vehicle">Add vehicle</string>
+    <string name="activity_add_vehicle_tittle">Enter information for your vehicle</string>
+    <string name="automobile">Automobile</string>
+    <string name="motorcycle">Motorcycle</string>
+    <string name="vin_number">Vehicle identification number</string>
+    <string name="vehicle_name">Vehicle name (*)</string>
+    <string name="license_plate">License Plate</string>
+    <string name="note">Note</string>
+    <string name="note_recall">Note:</string>
+    <string name="add">Add</string>
+    <string name="next_pm">Next PM:\u0020</string>
+    <string name="dialog_edit_vehicle_tittle">Edit Vehicle Information</string>
+    <string name="tap_to_edit_image_vehicle">Tap to edit vehicle\'s picture</string>
+    <string name="restore_image_vehicle"><u>Restore to Honda\'s picture</u></string>
+    <string name="current_name_vehicle">Current name:</string>
+    <string name="new_name_vehicle">New name:</string>
+    <string name="current_plate_number">Current plate number:</string>
+    <string name="new_plate_number">New number:</string>
+    <string name="label_error_empty">This field must not be empty!</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_ok_low_case">Ok</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="txt_default">The default bike will automatically connect when you turn on the app.</string>
+    <string name="txt_default_question">Do you want to set default for Honda SH 300cc bike?</string>
+    <string name="lb_welcome_next">NEXT</string>
+    <string name="lb_welcome_got_it">GOT IT</string>
+    <string name="btn_cancel_low">Cancel</string>
+    <string name="support_name">Support</string>
+    <string name="userprofile_name">User Profile</string>
+    <string name="tutorials_name">Tutorials</string>
+    <string name="privacypolicy_name">Privacy Policy</string>
+    <string name="termsvconditions_name">Terms and Conditions</string>
+    <string name="appsettings_name">App Settings</string>
+    <string name="rateourapp_name">Rate our app</string>
+    <string name="followuson_name">Follow us on</string>
+    <string name="faq_name">F.A.Q</string>
+    <string name="labelHello">Hello</string>
+    <string name="txtUserName">Fong</string>
+    <string name="titleMenuNavigation">cart</string>
+    <string name="titleMenuNavigation2">cart2</string>
+
+    <!-- Login Page -->
+    <string name="appID">4362857755730415962</string>
+
+    <!--String Quypv12-->
+
+    <string name="lb_name">Name (*)</string>
+    <string name="lb_phoneNumber">Phone number (*)</string>
+    <string name="lb_passWord">Password (*)</string>
+    <string name="lb_confirmPassWord">Confirm password (*)</string>
+    <string name="lb_gender">Gender</string>
+    <string name="lb_yearOfBirth">Year of birth</string>
+    <string name="txt_registerSuccess">Success! Thank you for validating your mobile phone!</string>
+    <string name="txt_registerFail">You have reached maximum number of retries.</string>
+    <string name="txt_tryAgain">Please try again the next day.</string>
+    <string name="lb_policy">I have read and accepted with Privacy Policy and Terms and Conditions</string>
+    <string name="btn_Sign">Sign up</string>
+    <string name="btn_next">Next</string>
+    //String Forgot
+
+    <!--String DatPT27-->
+    <string name="tv_request_dialog">The VIN number you entered is already on the system. Please check again. If you are sure that this VIN is correct and want to ask us to verify your VIN information and your owned vehicle, then click on the \n \"Request\" button</string>
+    <string name="tv_activate_insurance_dialog">Xe có số VIN *** ABC123 chưa được kích hoạt bào hành, Quý khách vui lòng cung cấp thêm thôn tin để kích hoạt bảo hành. Cảm ơn Quý Khách!</string>
+    <string name="btn_request_dialog">REQUEST</string>
+    <string name="btn_agree_dialog">AGREE</string>
+    <string name="tv_request_successfully_dialog">Request successfully. Waiting for HVN\'s reply</string>
+
+    <string name="tv_resend_text">Did not receive OTP?</string>
+
+    <string name="tv_resend_text_1">Resend OTP</string>
+
+    <string name="tv_instruction_text">Please enter the mobile phone number you used to register your account. We will send an OTP to your registered mobile phone to let you change your password. </string>
+
+    <string name="tv_phone_number_text">Phone number (*) </string>
+
+    <string name="tv_phone_text_box">+84\u0020\u0020\u0020</string>
+
+    <string name="tv_instruction_text_otp">We are sending and OTP to validate your mobile phone number. Please enter OTP:</string>
+
+    <string name="tv_success_text">Thank you for validating your mobile phone!\nPlease enter your new password</string>
+
+    <string name="tv_change_success_text">You have successfully changed your password!</string>
+
+
+    <string name="btn_verify">Verify</string>
+
+
+    <string name="btn_change_password">Change password</string>
+
+    <string name="lb_confirm_password">CONFIRM PASSWORD (*)</string>
+
+    <string name="lb_password">PASSWORD (*)</string>
+    <string name="lb_login">Log in</string>
+    <string name="lb_login_signup">Sign up</string>
+    <string name="lb_login_do_get_account">Don\'t have account?</string>
+
+
+    <string name="lb_profile_user_title">User Profile</string>
+    <string name="lb_profile_done">Done</string>
+    <string name="lb_profile_user_edit_title">Edit User Profile</string>
+    <string name="lb_policy_title">Privacy Policy</string>
+    <string name="lb_terms_title">Terms &amp; Conditions</string>
+    <string name="lb_forgot_pass_title">Forgot password</string>
+    <string name="lb_my_vehicle_title">My Vehicle</string>
+    <string name="lb_connected_title">Connect your vehicle</string>
+    <string name="lb_notification_title">Notification List</string>
+
+    //String connected
+    <string name="lb_fuel_status">Fuel status</string>
+    <string name="tv_honda_sh_300cc">Honda SH 300cc</string>
+    <string name="setting">Setting</string>
+    <string name="re_count">RE-COUNT</string>
+    <string name="vin">VIN: </string>
+    <string name="no_bluetooth_device_found">No bluetooth device found</string>
+    <string name="scanning_vehicle">Scanning Vehicle</string>
+    <string name="progress">Connecting…</string>
+    <string name="text_button_dialog_cancel">Cancel</string>
+    <string name="connection_problem">Connection problem!\nPlease retry</string>
+
+    <string name="msg_inactive_user">Another user is currently ACTIVE\nDo you still want to connect with\nthis BTU and make that user INACTIVE?</string>
+
+    <string name="text_button_reconnect">Retry</string>
+    <string name="text_message_require_bluetooth">This application requires\nbluetooth connection. Please\nturn on bluetooth.</string>
+    <string name="text_message_require_notification">This application requires\nnotification access. Please\nenable notification access.</string>
+    <string name="text_message_require_location">This application requires\nlocation service. Please\nturn on location.</string>
+    <string name="text_message_connect_fail_notice">Connection failed or device is\nnot expected vehicle!</string>
+    <string name="text_message_timeout_reconnect">Cannot connect to your vehicle.\nPlease make sure your vehicle\nis nearby. Would you like to\nretry?</string>
+    <string name="text_button_dialog_ok">OK</string>
+    <string name="text_button_dialog_quit">Quit</string>
+    <string name="please_selecte_the_vehicle_to_connect">Please select the vehicle to connect</string>
+    <string name="vehicle_scan_list">Vehicle Scan list</string>
+    <string name="change_oil">Change oil</string>
+    <string name="enter_verification_pin">Enter verification PIN</string>
+    <string name="pin_incorrect">PIN is not correct. Please  try again</string>
+
+    <!-- Connected Detail -->
+    <string name="connect_is_connected">Connected</string>
+    <string name="connect_is_disconnected">Disconnect</string>
+    <string name="time_update">Time to update</string>
+    <string name="minutes">(minutes)</string>
+    <string name="defaults">Default</string>
+    <string name="vehicle_list">Vehicle List</string>
+    <string name="activity_list_vehicle">Vehicles Connected List</string>
+    <string name="register_again">REGISTER AGAIN</string>
+    <string name="intro_new_model_title">Honda New Model</string>
+    <string name="intro_new_model_content">are equipped with excellent features to connect and send  parameters to your phone. You can easily control the status of your motorbike also with many other interesting utilities by your phone.</string>
+
+    <string-array name="spinner_array">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+
+    <string name="facebook_app_id">386410608890553</string>
+    <string name="fb_login_protocol_scheme">fb386410608890553</string>
+
+
+    <string name="add_vehicle_nfc_tittle">Please input VIN/Frame by NFC</string>
+    <string name="nfc">NFC</string>
+    <string name="add_vehicle_manual_tittle">Please input VIN/Frame</string>
+    <string name="submit">Submit</string>
+    <string name="VIN_incorrect">Lengh of VIN number is 17 characters</string>
+    <string name="fragment_verify_vehicle_title">Please provide images:</string>
+    <string name="vehicle_registration_certifcate">- Vehicle registration certificate <font fgcolor="#C61E24">(*)</font></string>
+    <string name="vehicle_personal_identity_card">- Personal identity card</string>
+    <string name="vehicle_invoice">- Vehicle invoice</string>
+    <string name="field_required"><font fgcolor="#C61E24">(*)</font> There fields are required.</string>
+    <string name="capture">Capture</string>
+    <string name="send_request">Send Request</string>
+    <string name="add_vehicle_success">Add vehicle successfully.</string>
+
+    <!-- Add vehicle -->
+    <string name="lb_add_vehicle_title">Add your vehicle</string>
+    <string name="lb_add_vehicle_done">DONE</string>
+    <string name="lb_input_phone_number">Input phone number</string>
+    <string name="lb_verify_otp">Verify OTP</string>
+    <string name="btn_finish">Finish</string>
+    <string name="err_not_null">Confirm password can not empty!</string>
+    <string name="err_incorrect_format">Incorrect format</string>
+    <string name="err_username_empty">Number phone can not empty!</string>
+
+    <string name="lb_dateOfBirth">Date of birth</string>
+    <string name="err_password_empty">Password can not empty!</string>
+    <string name="err_number_phone_not_valid">Number phone not valid!</string>
+    <string name="err_not_space">No spaces are allowed in the entire string and at least 6 characters</string>
+    <string name="err_wrong_confirm">“Confirm Password” does not match with “Password”.</string>
+    <string name="msg_2double_click">Tap back button in order to exit</string>
+    <string name="msg_wrong_otp_expired">OTP is expired. Please request a new one</string>
+
+    <string name="app_id_google">903413548857-1pvf4jnlc8gq2rrc9d8isu9e4qc2bvfu.apps.googleusercontent.com</string>
+
+    <string name="txt_red">Red</string>
+    <string name="txt_yellow">Yellow</string>
+    <string name="txt_blue">Blue</string>
+    <string name="txt_orange">Orange</string>
+    <string name="txt_indigo">Indigo</string>
+    <string name="txt_violet">Violet</string>
+    <string name="txt_green">Green</string>
+
+
+    <string name="lb_vehicle_brand">Vehicle brand</string>
+    <string name="lb_vehicle_type">Type</string>
+    <string name="lb_vehicle_model">Model</string>
+    <string name="lb_vehicle_color">Color</string>
+    <string name="vehicle_plate">Number plate (*)</string>
+    <string name="title_want_logout">Do you want sign out ?</string>
+
+    <string name="received_msg">Received message:</string>
+    <string name="lb_active_account_otp">Reactive your account</string>
+    <string name="lb_login_social">Please confirm your information:</string>
+    //list vehicle
+    <string name="lb_vehicle">Vehicle List</string>
+    //String information vehicle
+    <string name="lb_vh_model">Model:</string>
+    <string name="lb_vh_type">Type:</string>
+    <string name="lb_vh_Color">Color:</string>
+    <string name="lb_vh_Capacity">Cylinder Capacity:</string>
+    <string name="lb_vh_Warranty_Info">Warranty Info:</string>
+    <string name="PI_tittle">PI Information</string>
+    <string name="pi_1st">1st PI</string>
+    <string name="on_time">On Time</string>
+    <string name="expired">Expired</string>
+    <string name="next_time">Next time</string>
+    <string name="nearPIcheck">The last PI time (1st):</string>
+    <string name="date_expired_pi_check">The expired date of the next PI:</string>
+    <string name="service_booking">Service Booking</string>
+    <string name="service_is_booking">Current booking:</string>
+    <string name="service_booking_time">Booked time:</string>
+    <string name="HVN_head">Booked dealer:</string>
+    <string name="pi_2nd">2nd PI</string>
+    <string name="pi_3rd">3rd PI</string>
+    <string name="pi_4th">4th PI</string>
+    <string name="pi_5th">5th PI</string>
+    <string name="pi_6th">6th PI</string>
+    <string name="can_not_get_data">Can\'t get newest data from server</string>
+    <string name="revise">Revise</string>
+    <string name="verification_pin">Verification Pin</string>
+    <string name="how_to_check_pin_code">How to check Pin code</string>
+    <string name="enter_pin_code">Enter pin code</string>
+    <string name="help">HELP</string>
+    <string name="connection_problem_">Connection problem! Please try again.</string>
+    <string name="errNameEmpty">“Name” is required.</string>
+    <string name="errPhoneEmpty">“Phone” is required.</string>
+    <string name="errPhoneIncorrect">“Phone number” has incorrect format.</string>
+    <string name="errPassEmpty">“Password” is required.</string>
+    <string name="errWhiteSpace">No whitespace allowed in the entire string!</string>
+    <string name="errPassleast6">Password must be longer than 6 characters.</string>
+    <string name="errConfirmPassEmpty">“Confirm password” is required.</string>
+    <string name="err_year_incorrect">Invalid “Date of birth”.</string>
+    <string name="hotline"><u>1800 804 954</u></string>
+    <string name="btn_call">Call</string>
+    <string name="lv_get_vin_title">How to get VIN</string>
+    <string name="lb_get_vin_nfc_title">How to get a VIN by NFC</string>
+    <string name="lb_guide_take_photo">How to take photos of identity cards</string>
+    <string name="err_phone_is_exits">The phone has already been taken.</string>
+    <string name="err_can_not_load_data">Data could not be loaded</string>
+
+
+    <string name="tv_maintain">Bảo dưỡng</string>
+    <string name="tv_arrival">Arrival: </string>
+    <string name="tv_price">Cost: </string>
+    <string name="tv_km">Số km: </string>
+    <string name="tv_date">Ngày: </string>
+    <string name="tv_seeAll">See all</string>
+    <string name="tv_titleHistory">Service History</string>
+    <string name="tv_titleNotHistory">Your Vehicle has never used any service from Honda Vietnam.</string>
+    <string name="tv_titleNotInfoHistory">Chưa có thông tin với tài khoản này</string>
+    <string name="tv_fixNormal">Sửa chữa thông thường</string>
+    <string name="tv_ODO">ODO:</string>
+    <string name="tv_leave">Leave:</string>
+    <string name="tv_Job">Job</string>
+    <string name="tv_Job1">Công việc 1</string>
+    <string name="tv_AddOn1">Phụ tùng 1</string>
+    <string name="tv_AddOn2">Phụ tùng 2</string>
+    <string name="tv_AddOn3">Phụ tùng 3</string>
+    <string name="tv_AddOn4">Phụ tùng 4</string>
+    <string name="tv_priceDetails">Giá tiền</string>
+    <string name="tv_priceJob">854.000</string>
+    <string name="tv_price1">40.000</string>
+    <string name="tv_price2">150.000</string>
+    <string name="tv_price3">200.000</string>
+    <string name="tv_price4">500.000</string>
+    <string name="tv_priceSum">Tổng tiền</string>
+    <string name="tv_priceNumSum">1.708.000</string>
+    <string name="tv_ratingService">Rating service</string>
+    <string name="btn_bookService">BOOK A SERVICE NOW</string>
+    <string name="dialog_cancel">Cancel Current Booking</string>
+    <string name="dialog_revise">Revise Current Booking</string>
+    <string name="dialog_cancel_question">Are you sure you want to cancel this booking?</string>
+    <string name="dialog_cancel_radio_1">Tìm được nơi sửa chữa tốt hơn</string>
+    <string name="dialog_cancel_radio_2">Có công việc đột xuất</string>
+    <string name="dialog_cancel_radio_3">Quên không xem notification</string>
+    <string name="dialog_cancel_radio_4">Lý do khác: </string>
+    <string name="dialog_revise_radio_1">Bận việc riêng</string>
+    <string name="dialog_revise_radio_2">Quên không chú ý notification</string>
+    <string name="dialog_revise_radio_3">Di chuyển nơi xa làm dịch vụ</string>
+    <string name="btn_no">NO</string>
+    <string name="btn_yes">YES</string>
+    <string name="request_successfull">Request successfully. Waiting for HVNs\' reply</string>
+    <string name="recall_information">Recall Information</string>
+    <string name="recall_campaign_tittle">HVN is launching a Recall Campaign:</string>
+    <string name="VIN">VIN:</string>
+    <string name="time_repair">Duration:</string>
+    <string name="book_a_service_now">BOOK A SERVICE NOW</string>
+    <string name="book_a_service">book a service</string>
+    <string name="active_warranty"><font color='#C3011B'><u>Active Warranty</u></font></string>
+    <string name="extend_warranty"><font color='#C3011B'><u>Extend Warranty</u></font></string>
+    <string name="cancel_current_booking">Cancel Current Booking</string>
+    <string name="benefit_of_maintain">Lợi ích của việc bảo dưỡng</string>
+
+    //Dealer
+    <string name="lb_checkbox_oto">Automobile Dealers</string>
+    <string name="lb_checkbox_moto">Motorcycle Dealers</string>
+    <string name="tf_count_dealer">3 đại lý gần nhất</string>
+    <string name="title_activity_dealer_map">Map</string>
+
+    //vehicle informaation
+    <string name="title_extension">Gia Hạn Bảo Hành</string>
+    <string name="lb_service_booking">Service Booking</string>
+    <string name="notification_Waiting">Waiting dealer to confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="resive">Resive</string>
+    <string name="Dealer_confirmed">Dealer confirmed</string>
+
+    <string name="lb_capture_take_photo">Take Photo</string>
+    <string name="lb_capture_take_gallery">Choose image from Library</string>
+    <string name="lb__enable_location">Vui lòng bật dịch vụ truy cập địa điểm</string>
+    <string name="lb__enable_location_good"> Điều này giúp chúng tôi xác định chính xác địa điểm các đại lý ủy nhiệm của Honda gần bạn nhất</string>
+    <string name="lb_city">City</string>
+
+    <string name="btn_submit_booking">Submit this Booking</string>
+    <string name="lb_titleServiceBooking">Service Booking</string>
+    <string name="lb_service_booking_successfully">Your booking has been submitted successfully. It will be handed by dealer soon. Please wait for a while!</string>
+
+    <string name="lb_notification">Notification</string>
+    <string name="lb_HVN_is_lauching">HVN is lauching a Recall Campaign:</string>
+    <string name="lb_time_repair">Thời gian sửa chữa:</string>
+    <string name="lb_book_service_now">BOOK A SERVICE NOW</string>
+    <string name="lb_last_maintenance">Lần bảo dưỡng gần nhất:</string>
+    <string name="lb_benefits_maintenance">Lợi ích của việc bảo dưỡng</string>
+    <string name="lb_recall_information">Recall information</string>
+    <string name="btn_find_dealer">Tìm đại lý</string>
+    <string name="title_benefits_warranty">Lợi ích của việc bảo dưỡng</string>
+    <string name="number_phone">PHONE NUMBER</string>
+    <string name="passwords">PASSWORD</string>
+    <string name="login">Log in</string>
+    <string name="login_with">or Log in with</string>
+    <string name="lb_service">Dịch vụ</string>
+    <string name="lb_address_booking">Địa chỉ</string>
+    <string name="maintenance_reminder">Maintenance Reminder</string>
+    <string name="lb_navigation_to_dealer">NAVIGATE TO DEALER</string>
+    <string name="service_feedback">Service feedback</string>
+    <string name="rate_this_service">Rate this service</string>
+    <string name="lb_next_maintenance">Lần bảo dưỡng tiếp theo:</string>
+    <string name="lb_selected_time">Selected Time</string>
+    <string name="lb_selecte_type_service">Select Type of Service</string>
+    <string name="lb_Your_Additional_Information">Your Additional Information</string>
+    <string name="lb_my_car_has">My car has a problem in…</string>
+    <string name="lb_expected_finishing">Expected finishing time:</string>
+    <string name="label_dia_chi">Địa chỉ:</string>
+    <string name="label_your_additional_isempty">Your additional information can not empty!</string>
+    <string name="label_type_service"> Type of service can not empty!</string>
+    <string name="label_date_expec">Date can not empty!</string>
+    <string name="label_time_expec">Time can not empty!</string>
+    <string name="label_date_expec_incorrect">Date incorrect!</string>
+    <string name="label_time_expec_incorrect">Time incorrect!</string>
+    <string name="label_title_booking_service">Book a Service</string>
+    <string name="lb_maintain_information">Maintenance Info</string>
+    <string name="lb_connect">\u0020\u0020\u0020\u0020\u0020\u0020\u0020Connect\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="msg_wrong_login">Wrong login information.</string>
+    <string name="lb_account_is_not_active">You cannot login because your account is inactive.\n To active your account, we will send an OTP message for verification.\nDo you want to active your account now?</string>
+    <string name="msg_empty_otp">“OTP is required”</string>
+    <string name="lb_login_phone">PHONE NUMBER</string>
+    <string name="lb_login_password">PASSWORD</string>
+    <string name="lb_login_forgot_pass">Forgot password</string>
+    <string name="lb_login_button">Log in</string>
+    <string name="lb_login_login_with">or Log in with</string>
+    <string name="lb_login_social_confirm_title">Please confirm your information:</string>
+    <string name="lb_booking_status">Booking Status:</string>
+    <string name="web_client_id">903413548857-1pvf4jnlc8gq2rrc9d8isu9e4qc2bvfu.apps.googleusercontent.com</string>
+    <string name="goole_map_api_key">AIzaSyC--pBDsjxUF8XLhDN-xY35SGJo5Prz_e4</string>
+    <string name="verify_vehicle_information">Verify Vehicle Information</string>
+    <string name="msg_want_to_delete">Do you want to delete\u0020</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_message">You must grant permission to access camera and external storage to run this application.</string>
+    <string name="permission_warning">All permissions are required.</string>
+    <string name="lb_extended_warranty_info">Extended Warranty Info:</string>
+    <string name="lb_account_is_exist">“Sorry, your phone number already existed in our system. Please Log In with the phone number instead of Signing Up for a new account. In case you cannot Log In because you forgot your password, please use Forgot Password service.”</string>
+
+
+    <string name="lb_title_honda">Honda Automobile</string>
+    <string name="tv_proposed_price">Proposed price :From</string>
+    <string name="tv_title_promotion">Title Promotion</string>
+    <string name="tv_total">Total: </string>
+    <string name="tv_filter">Filter: </string>
+    
+    <string name="tv_filter_products">Filter Products</string>
+    <string name="tv_Origin">Origin</string>
+    <string name="chk_Imported">Imported</string>
+    <string name="chk_Asembly">Asembly</string>
+    <string name="tv_price_range">Price range</string>
+    <string name="tv_from">Từ</string>
+    <string name="tv_to">Đến</string>
+    <string name="tv_Styling">Styling</string>
+    <string name="chk_Sedan">Sedan</string>
+    <string name="chk_SUV">SUV</string>
+    <string name="chk_HatchBack">HatchBack</string>
+    <string name="tv_Color">Color</string>
+    <string name="chk_Red">Red</string>
+    <string name="chk_Blue">Blue</string>
+    <string name="chk_Green">Green</string>
+    <string name="chk_White">White</string>
+    <string name="chk_Yellow">Yellow</string>
+    <string name="chk_Black">Black</string>
+
+    <string name="tv_Category">Category</string>
+    <string name="chk_Motorbike">Motorbike</string>
+    <string name="chk_Scooter">Scooter</string>
+    <string name="chk_HandClutch">Hand Clutch</string>
+    <string name="chk_CUB">CUB</string>
+
+
+
+
+    //step test drive
+    <string name="lb_fill_into">"Fill\n Info"</string>
+    <string name="lb_select_vehicle_test">"Select\nVehicle"</string>
+    <string name="lb_select_dealer_test">"Select\nDealer"</string>
+    <string name="lb_submit_test">"Review\nSubmit"</string>
+    <string name="label_title_test_drive">Test Drive</string>
+    <string name="label_title_event">Events</string>
+    <string name="label_title_event_detail">Events</string>
+
+    <string name="btn_select_test_drive">Select vehicle to test drive</string>
+    <string name="text_step_2">"Note. The test drive program is only for\n customer who have a driver's license"</string>
+    <string name="lb_tittle_step_2">Please input your profile info</string>
+    <string name="lb_name_step_2">Name*</string>
+    <string name="lb_age_step_2">Age*</string>
+    <string name="lb_gender_step_2">Gender*</string>
+    <string name="lb_phone_step_2">Phone number*</string>
+    <string name="lb_address">Address*</string>
+    <string name="lb_Vehicle_Test_Drive">Vehicle Test Drive</string>
+    <string name="lb_done_Test_Drive">"Your information sent to DEALER.\nPlease wait the calling from DEALER to\n confirm again !"</string>
+    <string name="lb_event_tab_coming_title">Up-comming Event</string>
+    <string name="lb_event_tab_going_title">On-going Event</string>
+    <string name="btn_test_drive">Test Drive</string>
+    <string name="lb_text_nothing">Have not any on-going event</string>
+    <string name="btn_text_done">Done</string>
+
+    <string name="eventHome">Events</string>
+    <string name="news_PromotionsHome"><![CDATA[News &  Promotions]]></string>
+    <string name="lb_seemore">See more</string>
+    <string name="label_skip_tutorial">Skip Tutorial</string>
+    <string name="lb_hours">\u0020hours</string>
+    <string name="lb_until">until</string>
+    <string name="digits_disable_emoji">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRETUVWXYZ0123456789</string>
+    <string name="lb_title_event_detail">New model released!</string>
+
+    <string name="btn_will">Will jion</string>
+    <string name="btn_concem">Concern</string>
+    <string name="btn_dontcare">"Don't care"</string>
+    <string name="lb_event_Teaser">Teaser</string>
+    <string name="txt_event_detail_content">"This is the new Honda City for 2019. Before you wonder, it’s a significantly updated version of the existing car if not an all-new model. As part of the facelift, the City gets revised styling, a new top-of-the-line ZX variant, more equipment and tweaks to improve the NVH.\nThe most visible change to the car, of course, is to the front. The City now gets a bigger grille with a thick chrome strip running across it which is in line with the recently launched Accord hybrid. The bumper is more muscular and brand-new too, which help give the car a more fresh look. In the top ZX variant which we had on test, you get LED headlamps with daytime running strips -  a premium feature which buyers will surely appreciate and like. As there are no sheet metal changes, the City looks exactly the same in profile albeit the larger 16 inch alloy wheels give the car a more dynamic stance. units which look nice and the new boot-lip spoiler with integrated brake lamp accentuates the modern look.
+Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."</string>
+</resources>

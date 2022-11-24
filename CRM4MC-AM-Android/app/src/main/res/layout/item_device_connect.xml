@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:layout_marginLeft="20.5dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14.2dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tab_connected" />
+
+        <TextView
+            android:id="@+id/tv_name_vehicle"
+            style="@style/SmallBlackText"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17.5dp"
+            android:text="Honda"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="13dp"
+        android:background="@color/colorGray60" />
+</LinearLayout>

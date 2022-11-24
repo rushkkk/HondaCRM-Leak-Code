@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_null"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_capture"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDialogTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="Trợ Giúp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="@color/black_38" />
+
+            <TextView
+                android:id="@+id/tvFind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_capture_rectange_not_coners"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Tìm Đại lý gần nhất"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small_4"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="@color/black_38" />
+
+            <TextView
+                android:id="@+id/tvCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_capture_rectangle"
+                android:gravity="center"
+                android:padding="@dimen/padding_15"
+                android:text="Gọi điện cho tổng đài"
+                android:textColor="#A6A8AB"
+                android:textSize="@dimen/font_size_small_4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="@color/black_38" />
+
+            <TextView
+                android:id="@+id/tvChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_capture_rectangle"
+                android:gravity="center"
+                android:padding="@dimen/padding_15"
+                android:text="Chat"
+                android:textColor="#A6A8AB"
+                android:textSize="@dimen/font_size_small_4"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selector_background_capture"
+            android:gravity="center"
+            android:padding="@dimen/padding_15"
+            android:text="Cancel"
+            android:textColor="#FF0303"
+            android:textSize="@dimen/font_size_small_4" />
+
+    </LinearLayout>
+</FrameLayout>
